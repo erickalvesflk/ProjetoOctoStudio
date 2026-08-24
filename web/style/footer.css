@@ -1,9 +1,13 @@
 footer {
-    background-color: var(--third-color);
+    background-color: var(--secundary2-color);
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border-top: 3px solid var(--font-color2);
+    padding-top: 30px;
+    border-radius: 3px;
+    color: var(--font-color2);
 }
 
 footer h1{
@@ -48,7 +52,7 @@ footer section#contact > div{
 /* Direitos autorais */
 footer > p {
     font-size: .8em;
-    border-top: 3px solid var(--font-color1);
+    border-top: 3px solid var(--font-color2);
     padding-top: 30px;
     border-radius: 3px;
     text-align: center;

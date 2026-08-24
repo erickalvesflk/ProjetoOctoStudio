@@ -35,6 +35,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+
 /* CONTAINERS STYLE */
 .content-container{
     padding: 20px;
@@ -48,8 +49,8 @@ h1 {
     display: none;
 }
 
-/* BTNS STYLE */
 
+/* BTNS STYLE */
 #form-btn {
     margin: 20px 10px;
     font-size: 1em;
@@ -67,6 +68,7 @@ h1 {
 #games-btn:hover {
     background-color: var(--main-color-pressed);
 }
+
 
 /* PARTICIPANTES */
 #participants-container {
@@ -119,11 +121,12 @@ h1 {
     margin-bottom: 15px;
 }
 #prof img {
-    border-color: var(--secundary2-color);
+    border-color: var(--main-color);
 }
 #prof a {
     background-color: var(--font-color2);
 }
+
 
 /* JOGOS */
 #games-div {
@@ -161,11 +164,13 @@ nav{
 }
 #games-container{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .game-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 20px;
     background-color: var(--font-color2);
     border-radius: 10px;

@@ -1,6 +1,6 @@
 # Projeto OctoStudio
 Site desenvolvido para a **exibição dos jogos criados no projeto OctoStudio**, reunindo informações sobre os projetos e seus participantes em um único lugar.
-
+> **Aviso:** sou novo com o github em equipe, então qualquer erro ou dica eu estou aceitando! 
 ## Projeto no Figma
 O design do site está disponível no Figma e pode ser alterado ao longo do desenvolvimento do projeto.
 
@@ -64,5 +64,3 @@ ProjetoOctoStudio/
 │
 └── README.md
 ```
-
-## Estrutura JSON
