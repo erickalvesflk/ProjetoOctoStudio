@@ -1,0 +1,55 @@
+footer {
+    background-color: var(--third-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer h1{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+footer main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap: 20px;  
+}
+
+footer main section{
+    flex: 1;
+}
+
+footer section#contact > div{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#contact__email {
+    margin-top: 10px;
+}
+
+#uerj-icon {
+    width: 100px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+/* Direitos autorais */
+footer > p {
+    font-size: .8em;
+    border-top: 3px solid var(--font-color1);
+    padding-top: 30px;
+    border-radius: 3px;
+    text-align: center;
+}

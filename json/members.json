@@ -1,0 +1,13 @@
+[
+    {
+        "nanme": "nome da pessoa",
+        "class": "participante do projeto",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        },
+        "desc": ""
+    }
+]

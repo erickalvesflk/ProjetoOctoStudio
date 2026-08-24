@@ -1,0 +1,17 @@
+@media (min-width:600px) {
+    #menu-icon {
+        display: none;
+    }
+
+    .nav__option{
+        display: inline;
+    }
+
+    #games-btn {
+        display: none;
+    }
+
+    footer main{
+        flex-flow: row wrap;
+    }
+}
