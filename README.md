@@ -36,11 +36,12 @@ Dessa forma, **não é necessário criar manualmente as páginas de cada projeto
 ```text
 ProjetoOctoStudio/
 │
-├── Json/                       # Dados utilizados pelo gerador
+├── Data/                       # Dados utilizados pelo gerador
 │   ├── projects/
 │   └── members.json
 │
-├── Python/                     # Scripts responsáveis pela geração das páginas
+├── Generator/                  # Scripts python responsáveis pela geração das páginas
+│   └── template/
 │
 ├── Web/                        # Arquivos do site
 │   ├── imgs/
