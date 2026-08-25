@@ -3,26 +3,13 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("constants.css");
+
 @import url("header.css");
 @import url("hidescroll.css");
 @import url("button.css");
 @import url("footer.css");
 
-:root {
-    --main-color: #0d6efd;
-    --secundary2-color: #8B49FC;
-    --third-color: #FCDE49;
-    --background: #EAEAEA;
-    --font-color1: #3d3d3d;
-    --font-color2: #fcfcfc;
-    --main-color-pressed: #0350c4;
-    --third-color-pressed: #e9c92a;
-}
-* {
-    margin: 0px;
-    padding: 0px;
-    font-weight: 400;
-}
 
 body {
     font-family: "Inter", sans-serif;
@@ -34,7 +21,12 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+#about__title1{
+    display: inline-bl;
+}
+#about__title2{
+    display: none;
+}
 
 /* CONTAINERS STYLE */
 .content-container{
@@ -79,6 +71,8 @@ h1 {
 
 #students-container {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .participant-container{

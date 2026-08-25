@@ -2,12 +2,40 @@
     #menu-icon {
         display: none;
     }
+    #about-container{
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+    #about-container > *{
+        flex: 1;
+    }
+    #about-container > div{
+        max-width: 500px;
+    }
+    #form-btn{
+        height: 40px;
+        align-content: center;
+        margin-top: 40px;
+    }
+    #about__title1{
+        display: none;
+    }
+    #about__title2{
+        display: inline-block;
+    }
+    #example-img {
+        display: block;
+        width: 30%;
+        max-width: 400px;
+    }
     .nav__option{
         display: inline;
     }
     #games-btn {
         display: none;
     }
+
     footer > main {
         display: flex;
         flex-direction: column;
@@ -26,7 +54,8 @@
     #participants-container {
         display: grid;
         grid-template-columns: 1fr 4fr;
-        gap: 50px;
+        justify-content: space-between;
+        gap: 40px;
         background-color: var(--font-color2);
         border-radius: 10px;
         box-shadow: 5px 5px 1px rgba(12, 12, 12, 0.205);
@@ -41,8 +70,8 @@
     }
     
     #students-container {
+        justify-self: end;
         grid-column: 2/3;
-        
         flex-flow: row wrap;
         gap: 20px;
     }
@@ -61,9 +90,19 @@
         flex-flow: row wrap;
     }
 
+    #games-div{
+        max-width: 1000px;
+    }
+
+    #games-content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #games-container{
         flex-flow: row wrap;
-        justify-content: start;
+        max-width: 1000px;
     }
     
     .game-container{

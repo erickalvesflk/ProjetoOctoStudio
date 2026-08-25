@@ -1,3 +1,5 @@
+@import url("constants.css");
+
 header{
     display: flex;
     position: sticky;
@@ -8,6 +10,12 @@ header{
     border-bottom: 5px solid #2929294d;
     z-index: 1;
 }
+
+#header__title {
+    display: none;
+    font-size: 1.4em;
+}
+
 nav {
     margin-right: 20px;
 }
@@ -33,6 +41,18 @@ nav {
     color: var(--background);
 }
 
-header > img {
+#icon {
     width: 120px;
+}
+
+@media (min-width:700px) {
+    header div {
+        display: flex;
+        align-items: center;
+    }
+    #header__title {
+        margin: 0px;
+        display: inline-block;
+        color: var(--font-color2);
+    }
 }

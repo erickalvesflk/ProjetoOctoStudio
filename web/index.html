@@ -11,7 +11,10 @@
 </head>
 <body>
     <header>
-        <img src="imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
+        <div>
+            <img src="imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
+            <h1 id="header__title">Projeto Octostudio</h1>
+        </div>
         <nav>
             <i class="fa-solid fa-bars" id="menu-icon"></i>
             <ul id="nav__options">
@@ -23,20 +26,20 @@
         </nav>
     </header>
     <main>
-        <section class="content-container" id="about">
+        <section class="content-container" id="about-container">
             <div>
                 <h1 id="about__title1">Projeto Octostudio</h1>
                 <h1 id="about__title2">Sobre</h1>
                 <p>O projeto octostudio tem como objetivo introduzir o estudante ao mundo da programação. Apartir da criação de jogos divertidos pelo aplicativo octostudio</p>
-                <a class="btn" id="form-btn" href="#">Acesse o Formulário!</a>
+                <a class="btn" id="form-btn" href="#" target="_blank">Acesse o Formulário!</a>
             </div>
             <img src="imgs/main/octoEx.png" alt="exemplo de código do OctopusStudio" id="example-img">
         </section>
         <section class="content-container">
             <a class="btn" id="games-btn" href="#games-div">Ver Jogos</a>
-            <h1>Participantes</h1>
             <div>
                 <div id="participants-container">
+                    <h1>Participantes</h1>
                     <div id="profs-container">
                         <div class="participant-container" id="prof">
                             <img src="imgs/members/member.png" alt="foto de perfil do caleb">
@@ -50,21 +53,21 @@
                         <div class="participant-container">
                             <img src="imgs/members/member.png" alt="foto de perfil do caleb">
                             <div>
-                                <h2>Caleb ...</h2>
+                                <h2>Caleb ...1</h2>
                                 <a class="btn participant-btn" href="#">Veja mais</a>
                             </div>
                         </div>
                         <div class="participant-container">
                             <img src="imgs/members/member.png" alt="foto de perfil do caleb">
                             <div>
-                                <h2>Caleb ...</h2>
+                                <h2>Caleb ...2</h2>
                                 <a class="btn participant-btn" href="#">Veja mais</a>
                             </div>
                         </div>
                         <div class="participant-container">
                             <img src="imgs/members/member.png" alt="foto de perfil do caleb">
                             <div>
-                                <h2>Caleb ...</h2>
+                                <h2>Caleb ...3</h2>
                                 <a class="btn participant-btn" href="#">Veja mais</a>
                             </div>
                         </div>
@@ -100,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="content-container">
+        <section class="content-container" id="games-content-container">
             <h1>Jogos</h1>
             <div id="games-div">
                 <nav>

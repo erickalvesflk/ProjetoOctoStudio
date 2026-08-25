@@ -1,0 +1,15 @@
+:root {
+    --main-color: #0d6efd;
+    --secundary2-color: #8B49FC;
+    --third-color: #FCDE49;
+    --background: #EAEAEA;
+    --font-color1: #3d3d3d;
+    --font-color2: #fcfcfc;
+    --main-color-pressed: #0350c4;
+    --third-color-pressed: #e9c92a;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
