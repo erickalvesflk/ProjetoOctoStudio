@@ -36,11 +36,12 @@ Dessa forma, **não é necessário criar manualmente as páginas de cada projeto
 ```text
 ProjetoOctoStudio/
 │
-├── Json/                       # Dados utilizados pelo gerador
+├── Data/                       # Dados utilizados pelo gerador
 │   ├── projects/
 │   └── members.json
 │
-├── Python/                     # Scripts responsáveis pela geração das páginas
+├── Generator/                  # Scripts python responsáveis pela geração das páginas
+│   └── template/
 │
 ├── Web/                        # Arquivos do site
 │   ├── imgs/
@@ -58,7 +59,7 @@ ProjetoOctoStudio/
 │   │   ├── header.css          # Estilos para o cabeçalho
 │   │   ├── footer.css          # Estilos para o rodapé
 │   │   ├── hidescroll.css      # Esconde o scroll do site
-│   │   └── midiaquery.css      # Estilos para as telas maiores de 600px de largura
+│   │   └── mediaquery.css      # Estilos para as telas maiores de 600px de largura
 │   │
 │   └── index.html              # Página principal
 │
