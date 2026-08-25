@@ -55,7 +55,7 @@ ProjetoOctoStudio/
 │   │
 │   ├── scripts/                # Scripts JavaScript
 │   ├── style/                  # Arquivos CSS
-│   │   ├── style_index.css     # Estilos para a pagina inicial (index.html)
+│   │   ├── index.css     # Estilos para a pagina inicial (index.html)
 │   │   ├── header.css          # Estilos para o cabeçalho
 │   │   ├── footer.css          # Estilos para o rodapé
 │   │   ├── hidescroll.css      # Esconde o scroll do site
