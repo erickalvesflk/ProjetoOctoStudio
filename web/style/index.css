@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("constants.css");
 
+@import url("footer.css");
 @import url("header.css");
 @import url("hidescroll.css");
 @import url("button.css");
-@import url("footer.css");
 
 
 body {
@@ -78,7 +78,7 @@ h1 {
 .participant-container{
     display: flex;
     justify-content: start;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     background-color: var(--main-color);
     border-radius: 10px;
@@ -168,6 +168,7 @@ nav{
 }
 .game-container{
     display: flex;
+    gap: 12px;
     flex-direction: column;
     padding: 20px;
     background-color: var(--font-color2);

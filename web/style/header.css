@@ -34,6 +34,7 @@ nav {
 
 .nav__option{
     display: none;
+    transition: transform .15s ease-in-out;
 }
 
 .nav__option a{
@@ -41,15 +42,24 @@ nav {
     color: var(--background);
 }
 
+.nav__option a:hover{
+    color: var(--font-color2);
+}
+.nav__option:hover{
+    transform: scale(1.1);
+}
+
 #icon {
     width: 120px;
 }
 
 @media (min-width:700px) {
-    header div {
+    header div > a {
         display: flex;
         align-items: center;
+        text-decoration: none;
     }
+
     #header__title {
         margin: 0px;
         display: inline-block;

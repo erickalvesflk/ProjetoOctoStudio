@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UERJ-ZO - OctoStudio</title>
-    <link rel="stylesheet" href="style/style_index.css">
-    <link rel="stylesheet" href="style/midiaquery.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/mediaquery.css">
     <link rel="shortcut icon" href="https://octostudio.org/assets/octostudio-icon-wwClQFeP.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/e625421ec6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div>
-            <img src="imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
-            <h1 id="header__title">Projeto Octostudio</h1>
+            <a href="index.html">
+                <img src="imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
+                <h1 id="header__title">Projeto Octostudio</h1>
+            </a>
         </div>
         <nav>
             <i class="fa-solid fa-bars" id="menu-icon"></i>
             <ul id="nav__options">
-                <li class="nav__option"><a href="#">Inicio</a></li>
-                <li class="nav__option"><a href="#">Formulário</a></li>
-                <li class="nav__option"><a href="#">Jogos</a></li>
-                <li class="nav__option"><a href="#">Participantes</a></li>
+                <li class="nav__option"><a href="#about-container">Inicio</a></li>
+                <li class="nav__option"><a href="">Formulário</a></li>
+                <li class="nav__option"><a href="#participants-content-container">Participantes</a></li>
+                <li class="nav__option"><a href="#games-content-container">Jogos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="content-container" id="about-container">
             <div>
-                <h1 id="about__title1">Projeto Octostudio</h1>
-                <h1 id="about__title2">Sobre</h1>
-                <p>O projeto octostudio tem como objetivo introduzir o estudante ao mundo da programação. Apartir da criação de jogos divertidos pelo aplicativo octostudio</p>
-                <a class="btn" id="form-btn" href="#" target="_blank">Acesse o Formulário!</a>
+                <div>
+                    <h1 id="about__title1">Projeto Octostudio</h1>
+                    <h1 id="about__title2">Sobre</h1>
+                    <p>O projeto octostudio tem como objetivo introduzir o estudante ao mundo da programação. Apartir da criação de jogos divertidos pelo aplicativo octostudio</p>
+                    <a class="btn" id="form-btn" href="#" target="_blank">Acesse o Formulário!</a>
+                </div>
+                <img src="imgs/main/octoEx.png" alt="exemplo de código do OctopusStudio" id="example-img">
             </div>
-            <img src="imgs/main/octoEx.png" alt="exemplo de código do OctopusStudio" id="example-img">
         </section>
-        <section class="content-container">
+        <section class="content-container" id="participants-content-container">
             <a class="btn" id="games-btn" href="#games-div">Ver Jogos</a>
             <div>
+                <h1>Participantes</h1>
                 <div id="participants-container">
-                    <h1>Participantes</h1>
                     <div id="profs-container">
                         <div class="participant-container" id="prof">
                             <img src="imgs/members/member.png" alt="foto de perfil do caleb">
@@ -121,6 +125,21 @@
                         <h2>Jogo 2</h2>
                         <a class="btn" href="#">Veja mais</a>
                     </div>
+                    <div class="game-container">
+                        <img src="imgs/projects/jogo1.png" alt="jogo1">
+                        <h2>Jogo 3</h2>
+                        <a class="btn" href="#">Veja mais</a>
+                    </div>
+                    <div class="game-container">
+                        <img src="imgs/projects/jogo1.png" alt="jogo1">
+                        <h2>Jogo 4</h2>
+                        <a class="btn" href="#">Veja mais</a>
+                    </div>
+                    <div class="game-container">
+                        <img src="imgs/projects/jogo1.png" alt="jogo1">
+                        <h2>Jogo 5</h2>
+                        <a class="btn" href="#">Veja mais</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -130,7 +149,7 @@
             <h1>Projeto Octostudio</h1>
             <p>Patrocinado pela UERJ-ZO pelo NucTI</p>
         </section>
-        <main>
+        <main id="footer__main">
             <section>
                 <h1>UERJ-ZO</h1>
                 <p>Excelência no ensino público, pesquisa e extensão. Transformando a Zona Oeste do Rio através da ciência e tecnologia.</p>
