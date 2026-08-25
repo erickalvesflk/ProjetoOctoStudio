@@ -14,7 +14,7 @@
         align-items: center;
     }
 
-    .section-class{
+    .section-class {
         width: 100%;
     }
     .section-class {
@@ -24,14 +24,29 @@
     }
 
     #participants-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 50px;
         background-color: var(--font-color2);
-        flex-flow: row wrap;
         border-radius: 10px;
         box-shadow: 5px 5px 1px rgba(12, 12, 12, 0.205);
         padding: 20px;
         max-width: 1000px;
         margin: auto;
     }
+
+    #profs-container {
+        grid-column: 1/2;
+        height: 100%;
+    }
+    
+    #students-container {
+        grid-column: 2/3;
+        
+        flex-flow: row wrap;
+        gap: 20px;
+    }
+
     .participant-container{
         flex-direction: column;
         width: 150px;

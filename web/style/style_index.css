@@ -77,6 +77,10 @@ h1 {
     gap: 10px;
 }
 
+#students-container {
+    display: flex;
+}
+
 .participant-container{
     display: flex;
     justify-content: start;
