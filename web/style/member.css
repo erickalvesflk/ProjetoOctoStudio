@@ -1,6 +1,7 @@
 @import url("constants.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("tags.css");
 
 body {
     height: 100dvh;
@@ -16,33 +17,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-
-#div-tags {
-    margin-top: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.tag {
-    font-size: .8em;
-    background-color: #0466c2;
-    padding: 5px 10px;
-    color: var(--font-color2);
-    border-radius: 10px;
-    transition: 0.25s transform, background-color;
-}
-
-.tag:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-}
-#cc {background-color: #139b47;}
-#octopus {background-color: var(--secundary2-color);}
-#lego {background-color: #ff912a;}
-#sitej {background-color: var(--main-color);}
-#sitec {background-color: var(--main-color-pressed);}
 
 #participant-container {
     background-color: white;
@@ -75,8 +49,8 @@ main {
     border-radius: 50%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    border: 5px solid var(--main-color);
-    outline: 5px solid #005ae0;
+    border: 5px solid var(--secundary2-color);
+    outline: 5px solid var(--secundary2-color-pressed);
     margin-bottom: 20px;
 
 }

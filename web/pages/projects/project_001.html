@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participante - {{ member['name'] }}</title>
-    <link rel="stylesheet" href="../../style/member.css">
+    <title>Project - Destroi Asteroides</title>
+    <link rel="stylesheet" href="../../style/project.css">
     <link rel="shortcut icon" href="https://octostudio.org/assets/octostudio-icon-wwClQFeP.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/e625421ec6.js" crossorigin="anonymous"></script>
 </head>
@@ -27,45 +27,33 @@
         </nav>
     </header>
     <main>
-        <section id="participant-container">
-            <div id="participant-info">
-                {% if member['img'] != "" %}
-                    <img src="{{ member['img'] }}" alt="foto de perfil do participante {{ member['name'] }}">
-                {% else %}
-                    <img src="../../imgs/members/member.png" alt="foto de perfil anônima">
-                {% endif %}
-                <h1>{{ member['name'] }}</h1>
-                <p>{{ member['profile'] }}</p>
-                <div id="div-tags">
-                    {% for tag in member['tags'] %}
-                        {% if tag == 'cc' %}
-                            <p class="tag" id="cc">Ciência da Computação</p>
-                        {% endif %}
-                        {% if tag[0:2] == 'oc' %}
-                            <p class="tag" id="octopus">Fez {{ tag[2] }} jogo{{"" if tag[2] == "1" else "s"}} - Octopus Studio</p>
-                        {% endif %}
-                        {% if tag[0:2] == 'rl' %}
-                            <p class="tag" id="lego">Participou no projeto robô lego</p>
-                        {% endif %}
-                        {% if tag[0:2] == 'sj' %}
-                            <p class="tag" id="site_j">Ajudou na criação do site</p>
-                        {% elif tag[0:2] == 'sc' %}
-                            <p class="tag" id="site_c">Principal criador do site</p>
-                        {% endif %}
-                    {% endfor %}
+        <section>
+            <section id="project-header">
+                
+                    <img src="../../imgs/projects/space.jpeg" alt="Imagem do projeto Destroi Asteroides">
+                
+                <div id="project-info">
+                    <div>
+                        <h1>Destroi Asteroides</h1>
+                        <p id="criators">
+                            
+                                Criador: <a href="../members/paulo.html" class="criator">Paulo André</a>
+                                
+                        </p>
+                    </div>
+                    <div id="div-tags">
+                        
+                            <p class="tag easy">Dificuldade: Facil</p>
+                        
+                        
+                            <p class="tag easy">Complexidade: Iniciante</p>
+                        
+                    </div>
+                    <p>Desvie e Destrua os Asteróides! Quanto tempo você conseguirá?</p>
+                    <a href="../../../data/games/Destroi-Asteroides-1.1.octostudio" class="btn" id="download-btn" download>Baixar Jogo</a>
                 </div>
-            </div>
-            <div id="participant-networks">
-                {% for social, url in member['social'].items() %}
-                    {% if url != "" %}
-                        {% if social == "email" %}
-                            <a href="mailto:{{ url }}" class="net_btn" id="email"><i class="fa-regular fa-envelope net-icon"></i>{{ social.capitalize() }}</a>
-                        {% else %}
-                            <a href="{{ url }}" class="net_btn" id="{{ social }}"><i class="fa-brands fa-{{ social }} net-icon"></i>{{ social.capitalize() }}</a>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-            </div>
+            </section>
+            
         </section>
     </main>
     <footer>

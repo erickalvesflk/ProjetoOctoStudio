@@ -36,30 +36,34 @@ Dessa forma, **não é necessário criar manualmente as páginas de cada projeto
 ```text
 ProjetoOctoStudio/
 │
-├── Data/                       # Dados utilizados pelo gerador
-│   ├── projects/
+├── Data/                       # Dados utilizados pelo gerador e peo site
+│   ├── projects/                   # Jsons com informação de cada projeto
+│   ├── games/                      # arquivo dos jogos
 │   └── members.json
 │
 ├── Generator/                  # Scripts python responsáveis pela geração das páginas
-│   └── template/
+│   ├── src/
+│   ├── template/
+│   └── __main__.py
 │
-├── Web/                        # Arquivos do site
+├── Web/                        # Imagem de site
 │   ├── imgs/
-│   │   ├── main/               # Imagens utilizadas na página principal
-│   │   ├── members/            # Imagens dos participantes
-│   │   └── projects/           # Imagens dos projetos
+│   │   ├── main/                   # Imagens utilizadas na página principal
+│   │   ├── members/                # Imagens dos participantes
+│   │   └── projects/               # Imagens dos projetos
 │   │
-│   ├── pages/
-│   │   ├── members/            # Páginas geradas dos participantes
-│   │   └── projects/           # Páginas geradas dos projetos
+│   ├── pages/                  # Paginas Html
+│   │   ├── members/                # Páginas geradas dos participantes
+│   │   └── projects/               # Páginas geradas dos projetos
 │   │
 │   ├── scripts/                # Scripts JavaScript
 │   ├── style/                  # Arquivos CSS
-│   │   ├── index.css     # Estilos para a pagina inicial (index.html)
-│   │   ├── header.css          # Estilos para o cabeçalho
-│   │   ├── footer.css          # Estilos para o rodapé
-│   │   ├── hidescroll.css      # Esconde o scroll do site
-│   │   └── mediaquery.css      # Estilos para as telas maiores de 600px de largura
+│   │   ├── index.css               # Estilos para a pagina inicial (index.html)
+│   │   ├── member.css              # Estilos para as paginas de cada participante (pages/members)
+│   │   ├── header.css              # Estilos para o cabeçalho
+│   │   ├── footer.css              # Estilos para o rodapé
+│   │   ├── hidescroll.css          # Esconde o scroll do site
+│   │   └── mediaquery.css          # Estilos para as telas maiores de 600px de largura
 │   │
 │   └── index.html              # Página principal
 │

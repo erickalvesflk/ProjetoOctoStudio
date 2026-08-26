@@ -1,0 +1,30 @@
+#div-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag {
+    font-size: .8em;
+    background-color: #0466c2;
+    padding: 5px 10px;
+    color: var(--font-color2);
+    border-radius: 10px;
+    transition: 0.25s transform, background-color;
+}
+
+.tag:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+#cc {background-color: #139b47;}
+#octopus {background-color: var(--secundary2-color);}
+#lego {background-color: #ff912a;}
+#sitej {background-color: var(--main-color);}
+#sitec {background-color: var(--main-color-pressed);}
+.easy {background-color: #139b47;}
+.mid {background-color: #ff912a;}
+.hard {background-color: rgb(211, 3, 38);}

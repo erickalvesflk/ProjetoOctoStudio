@@ -8,7 +8,8 @@ MAIN_PROJECT_PATH = path.dirname(path.abspath(GENERATOR_PATH)) # ProjetoOcto/
 WEB_PATH = path.join(MAIN_PROJECT_PATH,"web") # ProjetoOcto/web/
 PAGES_PATH = path.join(WEB_PATH,"pages") # ProjetoOcto/web/pages/
 MEMBERS_WEB_PATH = path.join(PAGES_PATH,"members") # ProjetoOcto/web/pages/members/
-PROJECTS_WEB_PATH = path.join(WEB_PATH,"projects") # ProjetoOcto/web/pages/projects/
+PROJECTS_WEB_PATH = path.join(PAGES_PATH,"projects") # ProjetoOcto/web/pages/projects/
+PROJECTS_IMGS_WEB_PATH = path.join(PROJECTS_WEB_PATH,"info") # ProjetoOcto/web/pages/projects/
 
 DATA_PATH = path.join(MAIN_PROJECT_PATH,"data") # ProjetoOcto/data
 PROJECTS_JSON_PATH = path.join(DATA_PATH,"projects") # ProjetoOcto/data/projects
