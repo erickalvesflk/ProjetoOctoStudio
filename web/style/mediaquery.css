@@ -1,7 +1,4 @@
 @media (min-width:700px) {
-    #menu-icon {
-        display: none;
-    }
     #about-container > div{
         display: flex;
         justify-content: space-between;
@@ -33,9 +30,7 @@
         padding: 4% 0px 4% 0px;
         max-width: 400px;
     }
-    .nav__option{
-        display: inline;
-    }
+
     #games-btn {
         display: none;
     }

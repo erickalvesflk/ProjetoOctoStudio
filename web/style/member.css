@@ -1,0 +1,159 @@
+@import url("constants.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("tags.css");
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: var(--background);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#participant-container {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    border-bottom: 5px solid rgba(0, 0, 0, 0.205);
+    border-right: 5px solid rgba(0, 0, 0, 0.205);
+    
+    border-radius: 10px;
+}
+#participant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#participant-info h1::before, #participant-info h1::after {
+    content: " - ";
+}
+#participant-info img{
+    width: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: 5px solid var(--secundary2-color);
+    outline: 5px solid var(--secundary2-color-pressed);
+    margin-bottom: 20px;
+
+}
+#participant-networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.net_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 70%;
+    height: 50px;
+    padding: 20px 50px;
+
+    background-color: rgb(197, 94, 94);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.205);
+    border-right: 5px solid rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--font-color1);
+
+    transition: background-color .05s ease-in-out
+}
+
+.net-icon {
+    color: var(--font-color1);
+    font-size: 2em;
+}
+
+#linkedin {
+    background-color: #1688f1;
+    color: var(--font-color2);
+}
+#linkedin svg{
+    color: var(--font-color2);
+}
+#linkedin:hover {
+    background-color: #0466c2;
+}
+
+#email {
+    background-color: #FC6D49;
+    color: var(--font-color2);
+}
+#email svg{
+    color: var(--font-color2);
+}
+#email:hover {
+    background-color: #d35131;
+}
+
+#instagram {
+    background-color: #de3ff3;
+    color: var(--font-color2);
+}
+#instagram svg{
+    color: var(--font-color2);
+}
+#instagram:hover {
+    background-color: #c238d4;
+}
+
+#github {
+    background-color: #3D3D3D;
+    color: var(--font-color2);
+}
+#github svg{
+    color: var(--font-color2);
+}
+#github:hover {
+    background-color: #303030;
+}
+
+@media (min-width:700px){
+    #participant-container {
+        flex-direction: column;
+        margin: auto;
+        max-width: 80%;
+        max-width: 1000px;
+    }
+    #participant-networks {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .net_btn{
+        flex: 1;
+        height: 100px;
+        padding: 50px;
+    }
+    .net-icon {
+        color: var(--font-color1);
+        font-size: 500%;
+    }
+
+}

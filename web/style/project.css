@@ -1,0 +1,120 @@
+@import url("constants.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("button.css");
+@import url("tags.css");
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: var(--background);
+}
+
+#project-header, #guide{
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    border-right: 5px solid rgba(0, 0, 0, 0.200);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.200);
+    background-color: var(--font-color2);
+    padding: 20px;
+}
+
+#guide{
+    align-content: center;
+}
+#guide h1 {
+    width: 100%;
+    justify-content: right;
+}
+#guide div {
+    width: 100%;
+}
+#guide img {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+#guide div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#project-header img{
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#criators {
+    display: flex;
+    gap: 8px;
+}
+.criator {
+    font-weight: bold;
+    display: inline-block;
+    color: var(--secundary2-color);
+    text-decoration: none;
+    transition: transform 0.15s;
+}
+.criator:hover {
+    color: var(--secundary2-color-pressed);
+    transform: scale(1.05);
+}
+
+#div-tags {
+    margin-top: 0px;
+    justify-content: flex-start;
+}
+
+
+#download-btn {
+    background-color: var(--third-color);
+    color: var(--font-color1);
+    width: 100%;
+    max-width: 500px;
+    align-self: center;
+}
+
+#download-btn:hover {
+    background-color: var(--third-color-pressed);
+}
+
+@media (min-width:1450px){
+
+    #project-header {
+        max-width: 1000px;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #guide {
+        max-width: 1000px;
+    }
+    #download-btn {
+        align-self: center;
+        margin-top: 20px;
+        width: calc(90% - 10px);
+    }
+    #guide p, #guide a {
+        align-self: flex-start;
+    }
+}

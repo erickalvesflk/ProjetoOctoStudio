@@ -1,13 +1,10 @@
 {
-    "name": "space attack",
-    "file": "arquivo.oct",
-    "desc": "blabwqfifnjweiofnwoei",
-    "instructions": [ 
-        ["p",
-        "wefiowfwifnwiofnwiofniwofniwfenfo"
-        ],
-        ["img",
-        "img.png"
-        ]
-    ]
+    "name": "Destroi Asteroides",
+    "criators": ["Paulo André"],
+    "img": "space.jpeg",
+    "diff": "easy",
+    "diff_dev": "easy",
+    "desc": "Desvie e Destrua os Asteróides! Quanto tempo você conseguirá?",
+    "file": "Destroi-Asteroides-1.1.octostudio",
+    "guide": []
 }
