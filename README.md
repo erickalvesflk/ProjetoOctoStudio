@@ -51,6 +51,7 @@ ProjetoOctoStudio/
 │   │   ├── main/                   # Imagens utilizadas na página principal
 │   │   ├── members/                # Imagens dos participantes
 │   │   └── projects/               # Imagens dos projetos
+│   │       └── info/                  # Imagens para os guias dos projetos
 │   │
 │   ├── pages/                  # Paginas Html
 │   │   ├── members/                # Páginas geradas dos participantes

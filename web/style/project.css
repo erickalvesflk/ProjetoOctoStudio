@@ -13,7 +13,7 @@ body {
     background-color: var(--background);
 }
 
-#project-header, #instructions{
+#project-header, #guide{
     width: 70%;
     margin: auto;
     max-width: 500px;
@@ -28,23 +28,23 @@ body {
     padding: 20px;
 }
 
-#instructions{
+#guide{
     align-content: center;
 }
-#instructions h1 {
+#guide h1 {
     width: 100%;
     justify-content: right;
 }
-#instructions div {
+#guide div {
     width: 100%;
 }
-#instructions img {
+#guide img {
     width: 100%;
     margin: auto;
     max-width: 400px;
     border-radius: 10px;
 }
-#instructions div {
+#guide div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -106,7 +106,7 @@ body {
         justify-content: center;
         align-items: flex-start;
     }
-    #instructions {
+    #guide {
         max-width: 1000px;
     }
     #download-btn {
@@ -114,7 +114,7 @@ body {
         margin-top: 20px;
         width: calc(90% - 10px);
     }
-    #instructions p, #instructions a {
+    #guide p, #guide a {
         align-self: flex-start;
     }
 }

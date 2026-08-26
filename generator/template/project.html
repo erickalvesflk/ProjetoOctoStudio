@@ -71,11 +71,11 @@
                     <a href="../../../data/games/{{ project['file'] }}" class="btn" id="download-btn" download>Baixar Jogo</a>
                 </div>
             </section>
-            {% if project['instructions']|length > 0 %}
-                <section id="instructions">
-                    <h1>Instruções</h1>
+            {% if project['guide']|length > 0 %}
+                <section id="guide">
+                    <h1>Guia</h1>
                     <div>
-                        {% for instruction_array in project['instructions'] %}
+                        {% for instruction_array in project['guide'] %}
                             {% if instruction_array[0] == 'p' %}
                                 <p>{{ instruction_array[1] }}</p>
                             {% elif instruction_array[0] == 'a' %}

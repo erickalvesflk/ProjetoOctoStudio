@@ -23,7 +23,7 @@ class Project(TypedDict):
     diff: Literal["easy","mid","hard"]
     diff_dev: Literal["easy","mid","hard"]
     desc: str
-    instructions: list[tuple[Literal["p", "a", "img"], str]]
+    guide: list[tuple[Literal["p", "a", "img"], str]]
 
 type Projects = list[Project]
 
