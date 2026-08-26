@@ -1,13 +1,98 @@
 [
     {
-        "nanme": "nome da pessoa",
-        "class": "participante do projeto",
+        "name": "Caleb ...",
+        "tags": ["cc","oc1"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
             "email": "",
             "instagram": "",
             "github": ""
-        },
-        "desc": ""
+        }
+    },
+    {
+        "name": "Daniel ...",
+        "tags": ["cc","oc1"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "name": "Danilo ...",
+        "tags": ["cc","oc1","rl","sj"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "name": "Elle ...",
+        "tags": ["cc"],
+        "img": "",
+        "profile": "Aluno do x° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "name": "Erick Alves",
+        "tags": ["cc","oc5","sc"],
+        "img": "erick.jpg",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/erick-alves-dos-santos-814506362/",
+            "email": "erickalvesflk@gmail.com",
+            "instagram": "https://www.instagram.com/ericke2008/",
+            "github": "https://github.com/erickalvesflk"
+        }
+    },
+    {
+        "name": "Kauã",
+        "tags": ["cc","oc2","rl","sj"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": "https://github.com/promie0421"
+        }
+    },
+    {
+        "name": "Mateus ...",
+        "tags": ["cc"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "name": "Paulo André",
+        "tags": ["cc","oc1","rl"],
+        "img": "",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
+        }
     }
 ]

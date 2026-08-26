@@ -33,6 +33,7 @@ nav {
 }
 
 .nav__option{
+    display: inline;
     display: none;
     transition: transform .15s ease-in-out;
 }
@@ -60,9 +61,17 @@ nav {
         text-decoration: none;
     }
 
+    #menu-icon {
+        display: none;
+    }
+
     #header__title {
         margin: 0px;
         display: inline-block;
         color: var(--font-color2);
+    }
+
+    .nav__option{
+        display: flex;
     }
 }
