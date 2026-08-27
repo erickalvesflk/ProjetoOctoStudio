@@ -61,7 +61,7 @@
     },
     {
         "name": "Kauã",
-        "tags": ["cc","oc2","rl","sj"],
+        "tags": ["cc","oc2","rl","kc","sj"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
         "social": {
@@ -73,7 +73,7 @@
     },
     {
         "name": "Mateus ...",
-        "tags": ["cc"],
+        "tags": ["cc","oc1"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
         "social": {

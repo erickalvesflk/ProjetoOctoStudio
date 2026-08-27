@@ -49,10 +49,13 @@
                         {% if tag[0:2] == 'rl' %}
                             <p class="tag" id="lego">Participou no projeto robô lego</p>
                         {% endif %}
+                        {% if tag[0:2] == 'kc' %}
+                            <p class="tag" id="koby">Criador da IA Koby</p>
+                        {% endif %}
                         {% if tag[0:2] == 'sj' %}
-                            <p class="tag" id="site_j">Ajudou na criação do site</p>
+                            <p class="tag" id="site_j">Participou na Criação do site</p>
                         {% elif tag[0:2] == 'sc' %}
-                            <p class="tag" id="site_c">Principal criador do site</p>
+                            <p class="tag" id="site_c">Criador do site</p>
                         {% endif %}
                     {% endfor %}
                 </div>
