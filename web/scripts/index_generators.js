@@ -5,16 +5,16 @@
 //         <a class="btn participant-btn" href="#">Veja mais</a>
 //     </div>
 // </div>
-const path_members = "/web/pages/members/"
+const path_members = "web/pages/members/"
 function build_participant(participant){
     let container = document.createElement("div")
     container.classList.add("participant-container");
 
     let profile_img = document.createElement("img")
     if (participant["img"] != ""){
-        profile_img.setAttribute("src",`/web/imgs/members/${participant["img"]}`)
+        profile_img.setAttribute("src",`web/imgs/members/${participant["img"]}`)
     }else{
-        profile_img.setAttribute("src","/web/imgs/members/member.png")
+        profile_img.setAttribute("src","web/imgs/members/member.png")
     }
     profile_img.setAttribute("alt",`foto de perfil do(a) ${participant["name"]}`)
 
@@ -52,9 +52,9 @@ function build_project(project, num){
 
     let game_img = document.createElement("img")
     if (project["img"] != ""){
-        game_img.setAttribute("src",`/web/imgs/projects/${project["img"]}`)
+        game_img.setAttribute("src",`web/imgs/projects/${project["img"]}`)
     }else{
-        game_img.setAttribute("src","/web/imgs/projects/project.jpg")
+        game_img.setAttribute("src","web/imgs/projects/project.jpg")
     }
     container.appendChild(game_img)
 
@@ -86,7 +86,7 @@ function build_project(project, num){
     info_div.appendChild(creators_div)
     container.appendChild(info_div)
 
-    container.innerHTML += `<a class="btn" href="/web/pages/projects/project_${num}.html">Veja mais</a>`
+    container.innerHTML += `<a class="btn" href="web/pages/projects/project_${num}.html">Veja mais</a>`
 
     return container
 }
@@ -94,7 +94,7 @@ function build_project(project, num){
 const students_container = document.querySelector("#students-container")
 export async function generate_participants() {
 
-    const response = await fetch("../../data/members.json")
+    const response = await fetch("data/members.json")
     const data_members = await response.json();
     data_members.forEach(member => {
         students_container.append(build_participant(member))
@@ -106,7 +106,7 @@ export async function generate_projects() {
     let projects_data = []
     let i = 1
     while(i < 1000){
-        const response = await fetch(`../../data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
+        const response = await fetch(`data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
         if (response.status == "404") {
             console.log("opa")
             break
