@@ -66,20 +66,20 @@ function build_project(project, num){
     
     let creators_div = document.createElement("div")
     creators_div.classList.add("creators-div");
-    if(project["criators"].length == 1){
+    if(project["creators"].length == 1){
         creators_div.innerHTML += "<p>Criador: </p>"
     }else{
         creators_div.innerHTML += "<p>Criadores: </p>"
     }
-    project["criators"].forEach((criator_name, index) => {
-        const file_html_criator = criator_name
+    project["creators"].forEach((creator_name, index) => {
+        const file_html_creator = creator_name
             .split(" ")[0]
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .toLowerCase()+".html";
             
-        creators_div.innerHTML += `<a href="${path_members+file_html_criator}">${criator_name}</a>`
-        if (index != project["criators"].length-1){
+        creators_div.innerHTML += `<a href="${path_members+file_html_creator}">${creator_name}</a>`
+        if (index != project["creators"].length-1){
             creators_div.innerHTML += "<p>e</p>"
         }
     });

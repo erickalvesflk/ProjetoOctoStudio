@@ -41,12 +41,12 @@ def projects_html() -> None:
         i += 1
 
         members_pages = {}
-        for criator in PROJECT["criators"]:
-            author_html_file_name = _remove_special_chars(criator.split(" ")[0].lower()) + ".html"
+        for creator in PROJECT["creators"]:
+            author_html_file_name = _remove_special_chars(creator.split(" ")[0].lower()) + ".html"
             if _exists_path(_join(MEMBERS_WEB_PATH,author_html_file_name)):
-                members_pages[criator] = f"../members/{author_html_file_name}"
+                members_pages[creator] = f"../members/{author_html_file_name}"
             else:
-                members_pages[criator] = "#"
+                members_pages[creator] = "#"
 
         project_html = project_template.render(project=PROJECT, members_pages=members_pages)
         html_name = f"project_0{i if i >= 10 else f"0{i}"}"
