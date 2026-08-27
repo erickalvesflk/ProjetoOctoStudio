@@ -10,14 +10,16 @@
 </head>
 <body>
     <header>
-        <div>
+         <div>
             <a href="../../index.html">
                 <img src="../../imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
                 <h1 id="header__title">Projeto Octostudio</h1>
             </a>
         </div>
         <nav>
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
             <ul id="nav__options">
                 <li class="nav__option"><a href="../../index.html#about-container">Inicio</a></li>
                 <li class="nav__option"><a href="">Formulário</a></li>
@@ -45,7 +47,7 @@
                                 {% for criator in project['criators'] %}
                                     <a href="{{ members_pages[criator] }}" class="criator">{{ criator }}</a>
                                     {% if not loop.last  %}
-                                        ,
+                                        e
                                     {% endif %}
                                 {% endfor %}
                             {% endif %}
@@ -122,5 +124,6 @@
         </main>
         <p>© 2026 UERJ Zona Oeste. Todos os direitos reservados.</p>
     </footer>
+    <script src="../../scripts/header.js"></script>
 </body>
 </html>

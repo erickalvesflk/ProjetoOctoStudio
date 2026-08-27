@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("constants.css");
-
 @import url("footer.css");
 @import url("header.css");
 @import url("hidescroll.css");
@@ -134,6 +133,7 @@ h1 {
 }
 nav{
     display: flex;
+    display: none;
     gap: 5px;
 }
 #btn-filter {
@@ -188,6 +188,22 @@ nav{
 .game-container h2{
     font-weight: bold;
 }
+
+.creators-div {
+    display: flex;
+    gap: 10px;
+}
+.creators-div a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--main-color);
+    transition: .15s transform;
+}
+.creators-div a:hover {
+    transform: scale(1.04);
+    color: var(--main-color-pressed);
+}
+
 .game-container .btn {
     background-color: var(--third-color);
     color: var(--font-color1);

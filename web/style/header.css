@@ -19,33 +19,46 @@ header{
 nav {
     margin-right: 20px;
 }
-
-#nav__options{
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-    list-style-type: none;
+nav > button{
+    background-color: #0000;
+    border: 0px;
+}
+#menu-icon {
+    font-size: 30px;
+    color: #FFF;
+    z-index: 2;
 }
 
-#menu-icon {
+#menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
     font-size: 30px;
     color: var(--background);
 }
 
-.nav__option{
-    display: inline;
+#nav__options{
     display: none;
-    transition: transform .15s ease-in-out;
+    position: absolute;
+    list-style-type: none;
+    z-index: -1;
+    top: 68px;
+    width: 100vw;
+    left: 0px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.966);
+    border-bottom: 5px solid var(--font-color1);
 }
-
+.nav__option{
+    padding: 25px;
+}
 .nav__option a{
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
-    color: var(--background);
+    color: var(--font-color1);
 }
 
-.nav__option a:hover{
-    color: var(--font-color2);
-}
 .nav__option:hover{
     transform: scale(1.1);
 }
@@ -65,13 +78,44 @@ nav {
         display: none;
     }
 
+    #menu-btn {
+        display: none;
+    }
+
     #header__title {
         margin: 0px;
         display: inline-block;
         color: var(--font-color2);
     }
 
-    .nav__option{
+    #nav__options{
         display: flex;
+        z-index: 0;
+        position: static;
+        background-color: #0000;
+        color: var(--font-color2);
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        justify-content: flex-end;
+        gap: 25px;
+        border-bottom: 0px;
+        color: var(--font-color2);
+    }
+
+    .nav__option{
+        padding: 0px;
+        background-color: none;
+        display: inline;
+        transition: transform .15s ease-in-out;
+    }
+    
+    .nav__option a{
+        color: var(--background);
+        font-weight: normal;
+    }
+
+    .nav__option a:hover{
+        color: var(--font-color2);
     }
 }
