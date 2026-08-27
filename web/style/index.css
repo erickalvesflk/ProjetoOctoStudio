@@ -133,6 +133,7 @@ h1 {
 }
 nav{
     display: flex;
+    display: none;
     gap: 5px;
 }
 #btn-filter {

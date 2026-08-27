@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded",generate_participants)
-document.addEventListener("DOMContentLoaded",generate_projects)
-
 // <div class="participant-container">
 //     <img src="imgs/members/member.png" alt="foto de perfil do caleb">
 //     <div>
@@ -95,7 +92,7 @@ function build_project(project, num){
 }
 
 const students_container = document.querySelector("#students-container")
-async function generate_participants() {
+export async function generate_participants() {
 
     const response = await fetch("../../data/members.json")
     const data_members = await response.json();
@@ -104,7 +101,7 @@ async function generate_participants() {
     });
 }
 const projects_container = document.querySelector("#games-container")
-async function generate_projects() {
+export async function generate_projects() {
     
     let projects_data = []
     let i = 1
