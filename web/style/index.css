@@ -121,7 +121,8 @@ h1 {
     border-color: var(--font-color1);
 }
 #prof a {
-    background-color: var(--font-color2);
+    background-color: var(--font-color1);
+    color: var(--font-color2);
 }
 
 
@@ -170,6 +171,7 @@ h1 {
     display: flex;
     gap: 12px;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     background-color: var(--font-color2);
     border-radius: 10px;
@@ -187,6 +189,7 @@ h1 {
 }
 .game-container h2{
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .creators-div {
