@@ -70,14 +70,14 @@ body {
     gap: 8px;
 }
 .criator {
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
-    color: var(--secundary2-color);
+    color: var(--main-color);
     text-decoration: none;
     transition: transform 0.15s;
 }
 .criator:hover {
-    color: var(--secundary2-color-pressed);
+    color: var(--main-color-pressed);
     transform: scale(1.05);
 }
 

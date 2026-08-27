@@ -47,7 +47,7 @@
                                 {% for criator in project['criators'] %}
                                     <a href="{{ members_pages[criator] }}" class="criator">{{ criator }}</a>
                                     {% if not loop.last  %}
-                                        ,
+                                        e
                                     {% endif %}
                                 {% endfor %}
                             {% endif %}
