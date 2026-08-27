@@ -131,7 +131,7 @@ h1 {
     border-radius: 10px;
     padding: 10px;
 }
-nav{
+#games-div  nav{
     display: flex;
     display: none;
     gap: 5px;
