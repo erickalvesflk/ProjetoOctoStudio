@@ -19,7 +19,7 @@ type Members = list[Member]
 
 class Project(TypedDict):
     name: str
-    criators: list[str]
+    creators: list[str]
     diff: Literal["easy","mid","hard"]
     diff_dev: Literal["easy","mid","hard"]
     desc: str

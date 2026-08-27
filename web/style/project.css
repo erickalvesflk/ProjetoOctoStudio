@@ -65,18 +65,18 @@ body {
     gap: 10px;
 }
 
-#criators {
+#creators {
     display: flex;
     gap: 8px;
 }
-.criator {
+.creator {
     font-weight: 500;
     display: inline-block;
     color: var(--main-color);
     text-decoration: none;
     transition: transform 0.15s;
 }
-.criator:hover {
+.creator:hover {
     color: var(--main-color-pressed);
     transform: scale(1.05);
 }

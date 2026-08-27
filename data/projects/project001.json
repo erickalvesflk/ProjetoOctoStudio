@@ -1,6 +1,6 @@
 {
     "name": "Destroi Asteroides",
-    "criators": ["Paulo André"],
+    "creators": ["Paulo André"],
     "img": "space.jpeg",
     "diff": "easy",
     "diff_dev": "easy",

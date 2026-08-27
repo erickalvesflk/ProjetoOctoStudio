@@ -39,13 +39,13 @@
                 <div id="project-info">
                     <div>
                         <h1>{{ project['name'] }}</h1>
-                        <p id="criators">
-                            {% if project['criators']|length == 1 %}
-                                Criador: <a href="{{ members_pages[project['criators'][0]] }}" class="criator">{{ project['criators'][0] }}</a>
+                        <p id="creators">
+                            {% if project['creators']|length == 1 %}
+                                Criador: <a href="{{ members_pages[project['creators'][0]] }}" class="creator">{{ project['creators'][0] }}</a>
                                 {% else %}
                                 Criadores:
-                                {% for criator in project['criators'] %}
-                                    <a href="{{ members_pages[criator] }}" class="criator">{{ criator }}</a>
+                                {% for creator in project['creators'] %}
+                                    <a href="{{ members_pages[creator] }}" class="creator">{{ creator }}</a>
                                     {% if not loop.last  %}
                                         e
                                     {% endif %}
