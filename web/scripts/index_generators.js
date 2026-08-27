@@ -5,16 +5,16 @@
 //         <a class="btn participant-btn" href="#">Veja mais</a>
 //     </div>
 // </div>
-const path_members = "/web/pages/members/"
+const path_members = "/ProjetoOctoStudio/web/pages/members/"
 function build_participant(participant){
     let container = document.createElement("div")
     container.classList.add("participant-container");
 
     let profile_img = document.createElement("img")
     if (participant["img"] != ""){
-        profile_img.setAttribute("src",`/web/imgs/members/${participant["img"]}`)
+        profile_img.setAttribute("src",`/ProjetoOctoStudio/web/imgs/members/${participant["img"]}`)
     }else{
-        profile_img.setAttribute("src","/web/imgs/members/member.png")
+        profile_img.setAttribute("src","/ProjetoOctoStudio/web/imgs/members/member.png")
     }
     profile_img.setAttribute("alt",`foto de perfil do(a) ${participant["name"]}`)
 
@@ -52,9 +52,9 @@ function build_project(project, num){
 
     let game_img = document.createElement("img")
     if (project["img"] != ""){
-        game_img.setAttribute("src",`/web/imgs/projects/${project["img"]}`)
+        game_img.setAttribute("src",`/ProjetoOctoStudio/web/imgs/projects/${project["img"]}`)
     }else{
-        game_img.setAttribute("src","/web/imgs/projects/project.jpg")
+        game_img.setAttribute("src","/ProjetoOctoStudio/web/imgs/projects/project.jpg")
     }
     container.appendChild(game_img)
 
@@ -86,7 +86,7 @@ function build_project(project, num){
     info_div.appendChild(creators_div)
     container.appendChild(info_div)
 
-    container.innerHTML += `<a class="btn" href="/web/pages/projects/project_${num}.html">Veja mais</a>`
+    container.innerHTML += `<a class="btn" href="/ProjetoOctoStudio/web/pages/projects/project_${num}.html">Veja mais</a>`
 
     return container
 }
