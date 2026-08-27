@@ -118,7 +118,7 @@ h1 {
     margin-bottom: 15px;
 }
 #prof img {
-    border-color: var(--main-color);
+    border-color: var(--font-color1);
 }
 #prof a {
     background-color: var(--font-color2);
