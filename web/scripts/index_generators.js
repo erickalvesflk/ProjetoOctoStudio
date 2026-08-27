@@ -94,7 +94,7 @@ function build_project(project, num){
 const students_container = document.querySelector("#students-container")
 export async function generate_participants() {
 
-    const response = await fetch("../../data/members.json")
+    const response = await fetch("/data/members.json")
     const data_members = await response.json();
     data_members.forEach(member => {
         students_container.append(build_participant(member))
@@ -106,7 +106,7 @@ export async function generate_projects() {
     let projects_data = []
     let i = 1
     while(i < 1000){
-        const response = await fetch(`../../data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
+        const response = await fetch(`/data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
         if (response.status == "404") {
             console.log("opa")
             break
