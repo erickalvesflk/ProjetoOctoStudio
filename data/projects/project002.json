@@ -1,0 +1,10 @@
+{
+    "name": "Vector Drone",
+    "creators": ["Erick Alves"],
+    "img": "vector-drone.jpg",
+    "diff": "mid",
+    "diff_dev": "hard",
+    "desc": "Resgate pessoas com o drone, apartir da configuração dos vetores!",
+    "file": "VectorDrone-V1.21.octostudio",
+    "guide": []
+}
