@@ -64,9 +64,9 @@
                 {% for social, url in member['social'].items() %}
                     {% if url != "" %}
                         {% if social == "email" %}
-                            <a href="mailto:{{ url }}" class="net_btn" id="email"><i class="fa-regular fa-envelope net-icon"></i>{{ social.capitalize() }}</a>
+                            <a href="mailto:{{ url }}" class="net_btn" id="email" target="_blank"><i class="fa-regular fa-envelope net-icon"></i>{{ social.capitalize() }}</a>
                         {% else %}
-                            <a href="{{ url }}" class="net_btn" id="{{ social }}"><i class="fa-brands fa-{{ social }} net-icon"></i>{{ social.capitalize() }}</a>
+                            <a href="{{ url }}" class="net_btn" id="{{ social }}" target="_blank"><i class="fa-brands fa-{{ social }} net-icon"></i>{{ social.capitalize() }}</a>
                         {% endif %}
                     {% endif %}
                 {% endfor %}

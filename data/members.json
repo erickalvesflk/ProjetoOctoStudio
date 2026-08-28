@@ -1,13 +1,13 @@
 [
     {
-        "name": "Caleb ...",
+        "name": "Edrey Caleb",
         "tags": ["cc","oc1"],
-        "img": "",
+        "img": "caleb.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
-            "linkedin": "",
-            "email": "",
-            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/edreycaleb/",
+            "email": "edreycaleb5@gmail.com",
+            "instagram": "https://www.instagram.com/edreycaleb_/",
             "github": ""
         }
     },
@@ -24,7 +24,7 @@
         }
     },
     {
-        "name": "Danilo ...",
+        "name": "Danilo Gomes",
         "tags": ["cc","oc1","rl","sj"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
@@ -60,19 +60,19 @@
         }
     },
     {
-        "name": "Kauã",
+        "name": "Kauã Soares",
         "tags": ["cc","oc2","rl","kc","sj"],
-        "img": "",
+        "img": "kaua.jpg",
         "profile": "Aluno do 1° Semestre",
         "social": {
-            "linkedin": "",
-            "email": "",
-            "instagram": "",
+            "linkedin": "https://www.linkedin.com/in/kau%C3%A3-menezes-soares-652156355/?locale=pt",
+            "email": "kaua.soares.cybersec@gmail.com",
+            "instagram": "https://www.instagram.com/promie0421?igsi=MTR6dGRudGs2Yzd4Mg==",
             "github": "https://github.com/promie0421"
         }
     },
     {
-        "name": "Mateus ...",
+        "name": "Matheus Evangelista",
         "tags": ["cc","oc1"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
@@ -86,13 +86,13 @@
     {
         "name": "Paulo André",
         "tags": ["cc","oc1","rl"],
-        "img": "",
+        "img": "paulo.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
             "email": "",
-            "instagram": "",
-            "github": ""
+            "instagram": "https://www.instagram.com/pa.sotero/",
+            "github": "https://github.com/passrs"
         }
     }
 ]
