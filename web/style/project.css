@@ -89,8 +89,8 @@ body {
 
 #download-btn {
     background-color: var(--third-color);
-    color: var(--font-color1);
-    width: 100%;
+    color: var(--font-color2);
+    width: 95%;
     max-width: 500px;
     align-self: center;
 }
@@ -104,6 +104,7 @@ body {
     #project-header {
         max-width: 1000px;
         flex-flow: row wrap;
+        gap: 30px;
         justify-content: center;
         align-items: flex-start;
     }
