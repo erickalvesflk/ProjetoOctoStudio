@@ -45,19 +45,21 @@ h1 {
 #form-btn {
     margin: 20px 10px;
     font-size: 1em;
-    background-color: var(--third-color);
-    color: var(--font-color1);
+    background-color: var(--qua-color);
+    color: #fdfdfd;
 }
 #form-btn:hover {
-    background-color: var(--third-color-pressed);
+    background-color: var(--qua-color-pressed);
 }
 #games-btn {
     margin: 10px 0px 20px;
-    background-color: var(--main-color);
+    background-color: var(--third-color);
     color: var(--font-color2);
+    transition: .15s transform;
 }
 #games-btn:hover {
-    background-color: var(--main-color-pressed);
+    transform: scale(1.025);
+    background-color: var(--third-color-pressed);
 }
 
 
@@ -103,7 +105,7 @@ h1 {
     display: inline-block;
     box-shadow: 0px 0px;
     background-color: var(--third-color);
-    color: var(--font-color1);
+    color: var(--font-color2);
     margin-top: 5px;
     width: 100px;
 }
@@ -114,15 +116,18 @@ h1 {
 #prof {
     background-color: var(--third-color);
     order: -1;
-    color: var(--font-color1);
+    color: var(--font-color2);
     margin-bottom: 15px;
 }
 #prof img {
-    border-color: var(--font-color1);
+    border-color: var(--font-color2);
 }
 #prof a {
-    background-color: var(--font-color1);
-    color: var(--font-color2);
+    background-color: var(--font-color2);
+    color: var(--font-color1);
+}
+#prof a:hover {
+    background-color: var(--background);
 }
 
 
@@ -209,7 +214,7 @@ h1 {
 
 .game-container .btn {
     background-color: var(--third-color);
-    color: var(--font-color1);
+    color: var(--font-color2);
 }
 .game-container .btn:hover {
     background-color: var(--third-color-pressed);
