@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Octostudio</title>
+    <script src="https://kit.fontawesome.com/e625421ec6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="web/style/index.css">
 </head>
 <body>
     <header></header>
@@ -12,16 +14,16 @@
 
         <section class="section_main" id="about-section">
             <section id="about-container">
-                <div id="info">
+                <div id="about-info">
                     <div>
                         <div class="section-title">
-                            <h1>Sobre</h1>
+                            <h1>Projeto OctoStudio</h1>
                         </div>
                         <p>O projeto octostudio tem como objetivo introduzir o estudante ao mundo da programação. Apartir da criação de jogos divertidos pelo aplicativo octostudio</p>
                     </div>
-                    <div>
+                    <div id="about-btns">
                         <a class="btn" id="subscribe-btn" href="#">Inscreva-se</a>
-                        <a class="btn" id="see-games-btn" href="#">Ver Jogos</a>
+                        <a class="btn" id="see-games-btn" href="#games-section">Ver Jogos</a>
                     </div>
                 </div>
                 <img src="web/imgs/main/octoEx.png" alt="Exemplo de código no octostudio">
@@ -32,13 +34,14 @@
         <section class="section_main" id="members-section">
             <section id="members-container">
                 <div class="section-title">
+                    <i class="fa-solid fa-user-group icon-title"></i>
                     <h1>Participantes</h1>
                 </div>
                 <div id="members-grid">
-                    <div class="member-container">
+                    <div class="member-container" id="prof-container">
                         <div class="member-info">
-                            <img src="" alt="Imagem do participante">
-                            <h2>Nome</h2>
+                            <img src="WEB/imgs/members/member.png" alt="Imagem do participante">
+                            <h2>Andriana Sicsú</h2>
                         </div>
                         <a class="btn btn-member" href="#">Contatos</a>
                     </div>
@@ -50,16 +53,10 @@
         <section class="section_main" id="games-section">
             <section id="games-container">
                 <div class="section-title">
+                    <i class="fa-solid fa-gamepad icon-title"></i>
                     <h1>Jogos</h1>
                 </div>
                 <div id="games-carousel">
-                    <div class="game-container">
-                        <div class="game-info">
-                            <img src="" alt="Imagem do participante">
-                            <h2>Nome do Jogo</h2>
-                        </div>
-                        <a class="btn-game" href="#">Veja mais</a>
-                    </div>
                 </div>
             </section>            
         </section>
@@ -67,5 +64,6 @@
     </main>
 
     <footer></footer>
+    <script src="web/scripts/index.js" type="module"></script>
 </body>
 </html>

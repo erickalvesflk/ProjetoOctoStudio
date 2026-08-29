@@ -1,15 +1,17 @@
-// <div class="participant-container">
-//     <img src="imgs/members/member.png" alt="foto de perfil do caleb">
-//     <div>
-//         <h2>Caleb ...</h2>
-//         <a class="btn participant-btn" href="#">Veja mais</a>
+// <div class="member-container">
+//     <div class="member-info">
+//         <img src="WEB/imgs/members/member.png" alt="Imagem do participante">
+//         <h2>Nome</h2>
 //     </div>
+//     <a class="btn btn-member" href="#">Contatos</a>
 // </div>
 const path_members = "web/pages/members/"
 function build_participant(participant){
     let container = document.createElement("div")
-    container.classList.add("participant-container");
-
+    container.classList.add("member-container");
+    
+    let info = document.createElement("div")
+    info.classList.add("member-info");
     let profile_img = document.createElement("img")
     if (participant["img"] != ""){
         profile_img.setAttribute("src",`web/imgs/members/${participant["img"]}`)
@@ -18,8 +20,8 @@ function build_participant(participant){
     }
     profile_img.setAttribute("alt",`foto de perfil do(a) ${participant["name"]}`)
 
-    let div = document.createElement("div")
-    div.innerHTML += `<h2>${participant["name"]}</h2>`
+    info.appendChild(profile_img)
+    info.innerHTML += `<h2>${participant["name"]}</h2>`
 
     const file_html_name = participant["name"]
         .split(" ")[0]
@@ -27,24 +29,23 @@ function build_participant(participant){
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()+".html";
 
-    div.innerHTML += `<a class="btn participant-btn" href="${path_members+file_html_name}" >Veja mais</a>`
-
-    container.appendChild(profile_img)
-    container.appendChild(div)
+        
+    container.appendChild(info)
+    
+    container.innerHTML += `<a class="btn btn-member" href="${path_members+file_html_name}">Contatos</a>`
 
     return container
 }
 /* 
+
 <div class="game-container">
-    <img src="imgs/projects/jogo1.png" alt="jogo1">
-    <div>
-        <h2>Jogo 5</h2>
-        <div>
-            Criadores <a></a> ...
-        </div>
+    <img src="web/imgs/projects/pedra-papel-tesoura.jpg" alt="Imagem do participante">
+    <div class="game-info">
+        <h2>Nome do Jogo</h2>
+        <a class="btn-game" href="#">Veja mais</a>
     </div>
-    <a class="btn" href="#">Veja mais</a>
-</div> 
+</div>
+ 
 */
 function build_project(project, num){
     let container = document.createElement("div")
@@ -56,51 +57,30 @@ function build_project(project, num){
     }else{
         game_img.setAttribute("src","web/imgs/projects/project.jpg")
     }
-    container.appendChild(game_img)
-
     
+    
+    container.appendChild(game_img)
     let info_div = document.createElement("div")
-    info_div.classList.add("info-div");
+    info_div.classList.add("game-info");
     
     info_div.innerHTML += `<h2>${project["name"]}</h2>`
     
-    let creators_div = document.createElement("div")
-    creators_div.classList.add("creators-div");
-    if(project["creators"].length == 1){
-        creators_div.innerHTML += "<p>Criador: </p>"
-    }else{
-        creators_div.innerHTML += "<p>Criadores: </p>"
-    }
-    project["creators"].forEach((creator_name, index) => {
-        const file_html_creator = creator_name
-            .split(" ")[0]
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .toLowerCase()+".html";
-            
-        creators_div.innerHTML += `<a href="${path_members+file_html_creator}">${creator_name}</a>`
-        if (index != project["creators"].length-1){
-            creators_div.innerHTML += "<p>e</p>"
-        }
-    });
-    info_div.appendChild(creators_div)
     container.appendChild(info_div)
-
-    container.innerHTML += `<a class="btn" href="web/pages/projects/project_${num}.html">Veja mais</a>`
+    info_div.innerHTML += `<a class="btn-game" href="web/pages/projects/project_${num}.html">Veja mais</a>`
 
     return container
 }
 
-const students_container = document.querySelector("#students-container")
+const member_container = document.querySelector("#members-grid")
 export async function generate_participants() {
 
     const response = await fetch("data/members.json")
     const data_members = await response.json();
     data_members.forEach(member => {
-        students_container.append(build_participant(member))
+        member_container.append(build_participant(member))
     });
 }
-const projects_container = document.querySelector("#games-container")
+const projects_container = document.querySelector("#games-carousel")
 export async function generate_projects() {
     
     let projects_data = []
