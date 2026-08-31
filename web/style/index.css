@@ -8,3 +8,180 @@
 @import url("header.css");
 @import url("hidescroll.css");
 @import url("button.css");
+
+
+/* Config das sections da main */
+.section_main {
+    padding: 15px;
+}
+.section-title{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    margin: 10px 0px;
+}
+.section-title h1{
+    font-weight: 600;
+}
+.icon-title {
+    color: var(--main-color);
+    display: inline-block;
+    font-size: 200%;
+}
+
+/* ABOUT SECTION */
+#about-section {
+    background: linear-gradient(125deg, var(--main-color), var(--main-color-vari));
+    color: var(--font-color2);
+}
+#about-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#about-btns {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 90%;
+}
+
+#subscribe-btn {
+    background-color: var(--font-color2);
+    color: var(--font-color1);
+    transition: .15s transform;
+}
+#subscribe-btn:hover {
+    transform: scale(1.025);
+    background-color: var(--background);
+}
+#see-games-btn {
+    background-color: var(--secundary-color);
+    color: var(--font-color2);
+    margin-bottom: 20px;
+    transition: .15s transform;
+}
+#see-games-btn:hover {
+    transform: scale(1.025);
+    background-color: var(--secundary-color-pressed);
+}
+
+#about-container img {
+    display: none;
+}
+
+
+
+/* MEMBERS SECTIONS */
+#members-grid {
+    display: grid;
+    gap: 5px;
+}
+.member-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--font-color2);
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .200);
+    transition: .15s transform;
+}
+.member-container:hover{
+    transform: scale(1.015);
+}
+.member-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.member-info h2{
+    font-weight: 550;
+    font-size: .9em;
+}
+.member-info img{
+    width: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--secundary-color);
+}
+.btn-member {
+    color: var(--font-color2);
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    box-shadow: 0px 0px;
+    
+    font-size: .7em;
+}
+.btn-member:hover {
+    background-color: var(--secundary-color-pressed);
+}
+
+#prof-container img{
+    border: 3px solid var(--main-color);
+}
+#prof-container a{
+    background-color: var(--main-color);
+}
+#prof-container a:hover{
+    background-color: var(--main-color-pressed);
+}
+
+
+
+/* GAMES SECTIONS */
+#games-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.game-container {
+    background-color: var(--font-color2);
+    border-radius: 10px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row wrap;
+    gap: 12px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .200);
+    transition: .15s transform;
+}
+.game-container:hover{
+    transform: scale(1.015);
+}
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4px;
+}
+.game-info h2{
+    font-size: .9em;
+    font-weight: bold;
+}
+.game-container img{
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    width: 45%;
+    max-width: 150px;
+}
+.btn-game {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.btn-game:hover{
+    color: var(--main-color-pressed);
+}
+.btn-game::after{
+    content: " ->";
+}
+
+#games-carousel-arrows{
+    display: none;
+}

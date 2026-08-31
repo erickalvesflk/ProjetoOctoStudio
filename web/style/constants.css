@@ -6,7 +6,7 @@
     AQUI ESTÃO AS PRINCIPAIS CORES DOS PROJETOS, USE @import url("constants.css") para ter acesso!
 */
 :root {
-    --main-color: #752af4;
+    --main-color: #884bf1;
     --main-color-vari: #461993;
     --secundary-color: #0d6efd;
     --background: #EAEAEA;
@@ -18,13 +18,12 @@
     
     --main-color-pressed: #5b16d1;
     --secundary-color-pressed: #065ada;
-    --main-color-pressed: #0350c4;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
