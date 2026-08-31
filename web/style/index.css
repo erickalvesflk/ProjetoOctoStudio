@@ -18,10 +18,10 @@
     display: flex;
     gap: 10px;
     align-items: start;
+    margin: 10px 0px;
 }
 .section-title h1{
     font-weight: 600;
-    margin-bottom: 10px;
 }
 .icon-title {
     color: var(--main-color);
@@ -56,16 +56,20 @@
 #subscribe-btn {
     background-color: var(--font-color2);
     color: var(--font-color1);
+    transition: .15s transform;
 }
 #subscribe-btn:hover {
+    transform: scale(1.025);
     background-color: var(--background);
 }
 #see-games-btn {
     background-color: var(--secundary-color);
     color: var(--font-color2);
     margin-bottom: 20px;
+    transition: .15s transform;
 }
 #see-games-btn:hover {
+    transform: scale(1.025);
     background-color: var(--secundary-color-pressed);
 }
 
@@ -79,7 +83,6 @@
 #members-grid {
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr;
 }
 .member-container {
     display: flex;
@@ -178,3 +181,4 @@
 .btn-game::after{
     content: " ->";
 }
+
