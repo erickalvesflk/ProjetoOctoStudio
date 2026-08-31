@@ -76,15 +76,16 @@ export async function generate_participants() {
 
     const response = await fetch("data/members.json")
     const data_members = await response.json();
+
     data_members.forEach(member => {
         member_container.append(build_participant(member))
     });
 }
-const projects_container = document.querySelector("#games-carousel")
 export async function generate_projects() {
     
     let projects_data = []
     let i = 1
+    let projects_containers = []
     while(i < 1000){
         const response = await fetch(`data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
         if (response.status == "404") {
@@ -99,7 +100,9 @@ export async function generate_projects() {
     i = 1
     projects_data.forEach(project => {
         const num = i > 9 ? `0${i}` : `00${i}`
-        projects_container.appendChild(build_project(project,num))
+        projects_containers.push(build_project(project,num))
         i += 1
     });
+
+    return projects_containers
 }

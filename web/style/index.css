@@ -182,3 +182,6 @@
     content: " ->";
 }
 
+#games-carousel-arrows{
+    display: none;
+}
