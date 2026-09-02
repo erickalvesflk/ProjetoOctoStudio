@@ -4,7 +4,9 @@
     "img": "space.jpeg",
     "diff": "easy",
     "diff_dev": "easy",
-    "desc": "Desvie e Destrua os Asteróides! Quanto tempo você conseguirá?",
+    "desc": "",
     "file": "Destroi-Asteroides-1.1.octostudio",
-    "guide": []
+    "guide": [
+        ["",""]
+    ]
 }
