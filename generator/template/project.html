@@ -38,7 +38,7 @@
                 {% endif %}
                 <div id="project-info">
                     <div>
-                        <h1>{{ project['name'] }}</h1>
+                        <h1 class="project">{{ project['name'] }}</h1>
                         <p id="creators">
                             {% if project['creators']|length == 1 %}
                                 Criador: <a href="{{ members_pages[project['creators'][0]] }}" class="creator">{{ project['creators'][0] }}</a>
@@ -70,11 +70,14 @@
                         {% endif %}
                     </div>
                     <p>{{ project['desc'] }}</p>
-                    <a href="../../../data/games/{{ project['file'] }}" class="btn" id="download-btn" download>Baixar Jogo</a>
+                    <a href="../../../data/games/{{ project['file'] }}" class="btn" id="download-btn" download>Baixar Jogo </a>
                 </div>
             </section>
             {% if project['guide']|length > 0 %}
                 <section id="guide">
+
+                    <h1 class="guia">&#x1F56E; GUIA</h1>
+
                         {% for instruction_array in project['guide'] %}
                             {% if instruction_array[0] == 'p' %}
                                 <p>{{ instruction_array[1] }}</p>
