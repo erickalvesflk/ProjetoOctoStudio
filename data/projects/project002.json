@@ -4,7 +4,11 @@
     "img": "vector-drone.jpg",
     "diff": "mid",
     "diff_dev": "hard",
-    "desc": "Resgate pessoas com o drone, apartir da configuração dos vetores!",
+    "desc":"" ,
     "file": "VectorDrone-V1.21.octostudio",
-    "guide": []
+    "guide":[
+             ["p",""]
+             
+]
+
 }

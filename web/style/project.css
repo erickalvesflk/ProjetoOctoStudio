@@ -12,21 +12,22 @@ body {
     justify-content: space-between;
     gap: 30px;
     background-color: var(--background);
+    color: rgb(0, 0, 0);
 }
 
 #project-header, #guide{
-    width: 70%;
+    width: 56%;
     margin: auto;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     border-right: 5px solid rgba(0, 0, 0, 0.200);
     border-bottom: 5px solid rgba(0, 0, 0, 0.200);
     background-color: var(--font-color2);
-    padding: 40px;
+    padding: 13px;
 }
 
 #guide{
@@ -43,12 +44,13 @@ body {
     width: 100%;
     margin: auto;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #guide div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: monospace;
 }
 
 #project-header img{
@@ -62,12 +64,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 25px;
 }
 
 #creators {
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 .creator {
     font-weight: 500;
@@ -88,15 +90,18 @@ body {
 
 
 #download-btn {
-    background-color: var(--third-color);
+    background-color:blueviolet;
     color: var(--font-color2);
     width: 95%;
     max-width: 500px;
     align-self: center;
+    
+    
 }
 
 #download-btn:hover {
-    background-color: var(--third-color-pressed);
+    background-color:rgb(125, 54, 192);
+    transform: scale(1.10);
 }
 
 @media (min-width:1450px){
@@ -104,7 +109,7 @@ body {
     #project-header {
         max-width: 1000px;
         flex-flow: row wrap;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         align-items: flex-start;
     }
@@ -113,10 +118,97 @@ body {
     }
     #download-btn {
         align-self: center;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-right: 0px;
         width: calc(90% - 10px);
+        font-family: monospace;
+        font-size: larger;
     }
     #guide p, #guide a {
         align-self: flex-start;
+        font-family: monospace;
+        font-size: large;
     }
 }
+
+h1.end1{
+     font-size: xx-large;
+     font-family:monospace
+}
+
+p.end1{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+    
+}
+
+p.end11{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px; 
+    background-color: transparent;
+    padding: 10px; 
+}
+
+h1.end2{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+}
+
+p.end2{
+    font-size: medium;
+    font-family:cursive;
+}
+
+h1.end3{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+}
+
+footer.back{
+    background-color: rgb(107, 24, 219);
+    width: 100%;
+    padding-bottom: 20px;
+    color: aliceblue;
+
+}
+
+img.logo{
+width: 90px;
+
+}
+p.email{
+    font-size: medium;
+    font-family:cursive;
+}
+
+p.copy{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+hr{
+    border-style: solid; border-width: medium; border-color: aliceblue;
+}
+
+iframe.maps{
+  border-radius: 25px;
+}
+
+address.cep{
+    font-style: italic;
+    font-size: medium;
+    font-family:cursive ;
+}
+
+h1.guia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+

@@ -4,7 +4,9 @@
     "img": "pedra-papel-tesoura.jpg",
     "diff": "easy",
     "diff_dev": "mid",
-    "desc": "Jogue pedra, papel e tesoura agitando o seu dispositivos!",
+    "desc": "",
     "file": "Pedra-Papel-Tesoura-V1.1.octostudio",
-    "guide": []
+    "guide": [
+        ["",""]
+]
 }
