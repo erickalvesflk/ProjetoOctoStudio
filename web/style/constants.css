@@ -1,26 +1,33 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* 
+    O PROJETO É MOBILE FIRST. OU SEJA, PRIMEIRO DESEVOLVEMOS O CELULAR
+    AQUI ESTÃO AS PRINCIPAIS CORES DOS PROJETOS, USE @import url("constants.css") para ter acesso!
+*/
 :root {
-    --main-color: #0d6efd;
-    --secundary2-color: #8B49FC;
-    --third-color: #2e4b7e;
-    --qua-color: #6eda2c;
+    --main-color: #884bf1;
+    --main-color-vari: #461993;
+    --secundary-color: #0d6efd;
     --background: #EAEAEA;
+
+    --header-color: #1f155e;
+
     --font-color1: #3d3d3d;
     --font-color2: #fcfcfc;
-    --main-color-pressed: #0350c4;
-    --third-color-pressed: #223961;
-    --secundary2-color-pressed: #6d2ddb;
-    --qua-color-pressed: #4abe1d;
+    
+    --main-color-pressed: #5b16d1;
+    --secundary-color-pressed: #065ada;
 }
+
 * {
     margin: 0px;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color: var(--background);
+    color: var(--font-color1);
 }

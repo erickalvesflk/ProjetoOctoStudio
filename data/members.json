@@ -1,17 +1,5 @@
 [
     {
-        "name": "Edrey Caleb",
-        "tags": ["cc","oc1"],
-        "img": "caleb.jpeg",
-        "profile": "Aluno do 1° Semestre",
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/edreycaleb/",
-            "email": "edreycaleb5@gmail.com",
-            "instagram": "https://www.instagram.com/edreycaleb_/",
-            "github": ""
-        }
-    },
-    {
         "name": "Daniel ...",
         "tags": ["cc","oc1"],
         "img": "",
@@ -33,6 +21,18 @@
             "email": "",
             "instagram": "",
             "github": ""
+        }
+    },
+    {
+        "name": "Edrey Caleb",
+        "tags": ["cc","oc1"],
+        "img": "caleb.jpeg",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/edreycaleb/",
+            "email": "edreycaleb5@gmail.com",
+            "instagram": "https://www.instagram.com/edreycaleb_/",
+            "github": "https://github.com/edreycaleb"
         }
     },
     {

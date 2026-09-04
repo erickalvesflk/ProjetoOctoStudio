@@ -1,68 +1,7 @@
 @import url("constants.css");
 
-footer {
-    background-color: var(--secundary2-color-pressed);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border-top: 3px solid var(--font-color2);
-    padding-top: 30px;
-    border-radius: 3px;
-    color: var(--font-color2);
-}
 
-footer h1{
-    font-size: 1.3em;
-    margin-bottom: 0px;
-}
-
-footer section{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;   
-}
-
-footer main{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    gap: 20px;  
-}
-
-footer main section{
-    flex: 1;
-}
-
-footer section#contact > div{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-#contact__email {
-    margin-top: 10px;
-}
-
-#uerj-icon {
-    width: 100px;
-    align-self: center;
-    margin-top: 30px;
-}
-
-/* Direitos autorais */
-footer > p {
-    font-size: .8em;
-    border-top: 3px solid var(--font-color2);
-    padding-top: 30px;
-    border-radius: 3px;
-    text-align: center;
-}
 
 @media (min-width:700px) {
-    #footer__main{
-        flex-flow: row wrap;
-        align-items: flex-start;
-    }
+
 }

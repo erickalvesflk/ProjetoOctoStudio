@@ -4,7 +4,9 @@
     "img": "ping-pong.jpg",
     "diff": "easy",
     "diff_dev": "easy",
-    "desc": "Joguo ping pong com o seu dispositivo!",
+    "desc": "",
     "file": "PingPong.octostudio",
-    "guide": []
+    "guide": [
+        ["",""]
+]
 }
