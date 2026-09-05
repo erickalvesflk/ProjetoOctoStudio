@@ -185,3 +185,6 @@
 #games-carousel-arrows{
     display: none;
 }
+#games-carousel-container{
+    overflow: hidden;
+}

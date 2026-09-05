@@ -1,4 +1,3 @@
-
 export class Carousel{
     #projects_container_section = document.querySelector("#games-carousel")
     actual_index = 1
