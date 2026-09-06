@@ -1,7 +1,79 @@
 @import url("constants.css");
 
+h1.end1{
+     font-size: xx-large;
+     font-family:monospace
+}
 
+p.end1{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+    
+}
 
-@media (min-width:700px) {
+p.end11{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px; 
+    background-color: transparent;
+    padding: 10px; 
+}
 
+h1.end2{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+}
+
+p.end2{
+    font-size: medium;
+    font-family:cursive;
+}
+
+h1.end3{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: gold;
+}
+footer.back{
+    background-color: rgb(107, 24, 219);
+    width: 100%;
+    padding-bottom: 20px;
+    color: aliceblue;
+
+}
+
+img.logo{
+width: 90px;
+
+}
+p.email{
+    font-size: medium;
+    font-family:cursive;
+}
+
+p.copy{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+hr{
+    border-style: solid; border-width: medium; border-color: aliceblue;
+}
+
+iframe.maps{
+  border-radius: 25px;
+}
+
+address.cep{
+    font-style: italic;
+    font-size: medium;
+    font-family:cursive ;
+}
+
+h1.guia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
