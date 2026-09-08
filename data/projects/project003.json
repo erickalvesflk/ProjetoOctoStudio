@@ -6,7 +6,8 @@
     "diff_dev": "mid",
     "desc": "",
     "file": "Pedra-Papel-Tesoura-V1.1.octostudio",
-    "guide": [
-        ["",""]
-]
+    "guide": {
+        "text": "O jogo 'Pedra, Papel ou Tesoura' é o clássico jogo infatil que todos já conhecem. O jogador agita o dispositivo para alternar entre as opções e toca na tela para escolher, e então agita mais algumas vezes para saber o resultado contra o bot. Um jogo simples e divertido!", 
+        "vdo": "pedrapapeltesoura.mp4"
+    }
 }
