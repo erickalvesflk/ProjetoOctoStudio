@@ -52,7 +52,7 @@ ProjetoOctoStudio/
 │   │   ├── members/                # Imagens dos participantes
 │   │   └── projects/               # Imagens dos projetos
 │   │       └── info/                  # Imagens para os guias dos 
-│   ├── videos/
+│   ├── videos/                 # Contem todos os videos do site
 │   │
 │   ├── pages/                  # Paginas Html
 │   │   ├── members/                # Páginas geradas dos participantes
