@@ -1,7 +1,121 @@
 @import url("constants.css");
 
+header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color-vari);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.200);
+    z-index: 1;
+}
 
+#header__title {
+    display: none;
+    font-size: 1.4em;
+}
+
+nav {
+    margin-right: 20px;
+}
+nav > button{
+    background-color: #0000;
+    border: 0px;
+}
+#menu-icon {
+    font-size: 30px;
+    color: #FFF;
+    z-index: 2;
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    font-size: 30px;
+    color: var(--background);
+}
+
+#nav__options{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    z-index: -1;
+    top: 65px;
+    width: 100vw;
+    left: 0px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.966);
+    border-bottom: 5px solid var(--font-color1);
+}
+.nav__option{
+    padding: 25px;
+}
+.nav__option a{
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+.nav__option:hover{
+    transform: scale(1.1);
+}
+
+#icon {
+    width: 120px;
+}
 
 @media (min-width:700px) {
+    header div > a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
 
+    #menu-icon {
+        display: none;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    #header__title {
+        margin: 0px;
+        display: inline-block;
+        color: var(--font-color2);
+    }
+
+    #nav__options{
+        display: flex;
+        z-index: 0;
+        position: static;
+        background-color: #0000;
+        color: var(--font-color2);
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        justify-content: flex-end;
+        gap: 25px;
+        border-bottom: 0px;
+        color: var(--font-color2);
+    }
+
+    .nav__option{
+        padding: 0px;
+        background-color: none;
+        display: inline;
+        transition: transform .15s ease-in-out;
+    }
+    
+    .nav__option a{
+        color: var(--background);
+        font-weight: normal;
+    }
+
+    .nav__option a:hover{
+        color: var(--font-color2);
+    }
 }

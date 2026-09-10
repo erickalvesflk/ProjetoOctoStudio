@@ -60,4 +60,3 @@ media.addEventListener("change", (event) => {
         title.innerHTML = "Projeto OctoStudio"
     }
 });
-media.addEventListener("change", updateScreen);
