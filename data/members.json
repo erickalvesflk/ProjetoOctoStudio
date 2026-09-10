@@ -49,7 +49,7 @@
     },
     {
         "name": "Erick Alves",
-        "tags": ["cc","oc4","sc"],
+        "tags": ["cc","oc1","rl","sj","sc"],
         "img": "erick.jpg",
         "profile": "Aluno do 1° Semestre",
         "social": {
@@ -85,12 +85,12 @@
     },
     {
         "name": "Paulo André",
-        "tags": ["cc","oc1","rl"],
+        "tags": ["cc","oc1","rl","sj","sc"],
         "img": "paulo.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
-            "email": "",
+            "email": "soteropauloandre@gmail.com",
             "instagram": "https://www.instagram.com/pa.sotero/",
             "github": "https://github.com/passrs"
         }

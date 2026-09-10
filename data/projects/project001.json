@@ -1,15 +1,13 @@
 {
-  "name": "Jornada das Proteinas",
+  "name": "Jornada das Proteinas", 
   "creators": ["Erick Alves"],
   "img": "trad.png",
   "diff": "mid",
   "diff_dev": "hard",
   "desc": "",
   "file": "transcricao_v0.31.octostudio",
-  "guide": [
-    ["p", "" ],
-    ["p",""],
-    ["p", ""]
-    
-  ]
+  "guide": {
+    "text": "O jogo 'jornada das Proteínas' é uma sensacional forma de aprender sobre as bases nitrogenadas. O jogo funciona como um 'Genius', em que você deve colocar a base que se liga com a que aparecer na tela. O jogo acaba quando você completar 10 rodadas. Divirta-se e aprenda!", 
+    "vdo": "jornadaproteinas.mp4"
+  }
 }

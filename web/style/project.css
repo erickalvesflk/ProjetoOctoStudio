@@ -37,8 +37,27 @@ body {
     width: 100%;
     justify-content: right;
 }
+#guide p {
+        text-align: justify;
+        align-self: flex-start;
+        font-family: monospace;
+        font-size: large;
+    }
 #guide div {
-    width: 100%;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20px                        
+}
+#guide video {
+    width: 70%; 
+    height: 90%; 
+    object-fit: contain; 
+    display: block; 
+    border-radius: 20px;
 }
 #guide img {
     width: 100%;
@@ -123,7 +142,8 @@ body {
         font-family: monospace;
         font-size: larger;
     }
-    #guide p, #guide a {
+    #guide p {
+        text-align: justify;
         align-self: flex-start;
         font-family: monospace;
         font-size: large;
