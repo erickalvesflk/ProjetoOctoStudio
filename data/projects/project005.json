@@ -1,7 +1,7 @@
 {
     "name": "Ping Pong",
-    "creators": ["Erick Alves"],
-    "img": "ping-pong.jpg",
+    "creators": ["Erick Alves", "Paulo André"],
+    "img": "ping-pong.jpeg",
     "diff": "easy",
     "diff_dev": "easy",
     "desc": "",

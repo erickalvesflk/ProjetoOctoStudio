@@ -60,15 +60,14 @@
 
                     <h1 class="guia">&#x1F56E; GUIA</h1>
 
-                    <p style="text-align: justify;">{{ project['guide']['text'] }}</p>
+                    <p>{{ project['guide']['text'] }}</p>
                     <br>        
-                    <div style="width: 100%; height: auto; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 20px">
+                    <div>
                         <video 
-                            src="{{ project['guide']['vdo'] }}"
-                            style="width: 70%; height: 90%; object-fit: contain; display: block; border-radius: 20px;" 
-                            autoplay loop muted playsinline>
+                            src="{{ project['guide']['vdo'] }}" autoplay loop muted playsinline>
                         </video>
-                    </div> 
+                    </div>
+                    <br><br>
                 </section>
             {% endif %}
         </section>
