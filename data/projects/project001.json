@@ -4,7 +4,7 @@
     "img": "trad.png",
     "diff": "mid",
     "diff_dev": "hard",
-    "desc": "Descruba a jornada das proteínas e monte a sua propria fita de RNA!",
+    "desc": "Você sabe do que é formado? Jornada das Proteínas é um jogo sobre a tradução de fitas RNA a partir do DNA. Ligue corretamente as bases para formar a proteína desejada e monte sua própria fita de RNA.",
     "file": "transcricao_v0.31.octostudio",
     "guide": []
 }
