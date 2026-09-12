@@ -1,3 +1,4 @@
+@import url("constants.css");
 #div-tags {
     margin-top: 10px;
     display: flex;
@@ -21,11 +22,11 @@
 }
 
 #cc {background-color: #139b47;}
-#octopus {background-color: var(--secundary2-color);}
+#octopus {background-color: var(--main-color);}
 #lego {background-color: #ff912a;}
 #koby {background-color: #3a2cfc;}
-#sitej {background-color: var(--main-color);}
-#sitec {background-color: var(--main-color-pressed);}
+#sitej {background-color: var(--secundary-color);}
+#sitec {background-color: var(--secundary-color);}
 .easy {background-color: #139b47;}
 .mid {background-color: #ff912a;}
 .hard {background-color: rgb(211, 3, 38);}
