@@ -15,10 +15,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 function generateHeader(){
+    const is_internal_page = window.location.pathname.includes("/web/pages/")
+    const home_path = is_internal_page ? "../../../index.html" : ""
+    const logo_path = is_internal_page ? "../../imgs/main/icon.png" : "web/imgs/main/icon.png"
+
     let title_div = document.createElement('div')
     title_div.innerHTML =(
-    `<a href="index.html">
-        <img src="web/imgs/main/icon.png" alt="Logo UERJ em parceria com Octostudio" id="icon">
+    `<a href="${is_internal_page ? home_path : "index.html"}">
+        <img src="${logo_path}" alt="Logo UERJ em parceria com Octostudio" id="icon">
         <h1 id="header__title">Projeto Octostudio</h1>
     </a>`
     )
@@ -29,10 +33,10 @@ function generateHeader(){
             <i class="fa-solid fa-bars" id="menu-icon"></i>
     </button>
     <ul id="nav__options">
-          <li class="nav__option"><a href="#about-container">Inicio</a></li>
+          <li class="nav__option"><a href="${home_path}#about-container">Inicio</a></li>
           <li class="nav__option"><a href="#">Formulário</a></li>
-          <li class="nav__option"><a href="#members-container">Participantes</a></li>
-          <li class="nav__option"><a href="#games-section">Jogos</a></li>
+          <li class="nav__option"><a href="${home_path}#members-container">Participantes</a></li>
+          <li class="nav__option"><a href="${home_path}#games-section">Jogos</a></li>
     </ul>`
     )
 
