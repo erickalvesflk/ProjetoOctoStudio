@@ -1,68 +1,77 @@
 @import url("constants.css");
 
-footer {
-    background-color: var(--secundary2-color-pressed);
-    padding: 20px;
-    display: flex;
+#footer__main{
     flex-direction: column;
-    gap: 30px;
-    border-top: 3px solid var(--font-color2);
-    padding-top: 30px;
-    border-radius: 3px;
-    color: var(--font-color2);
+    align-items: start;
+    margin-left: 20px;
 }
-
-footer h1{
-    font-size: 1.3em;
-    margin-bottom: 0px;
+#footer_title{
+ padding: 15px 20px;
 }
-
-footer section{
+h1.end1{
     display: flex;
-    flex-direction: column;
-    gap: 10px;   
-}
-
-footer main{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    gap: 20px;  
-}
-
-footer main section{
-    flex: 1;
-}
-
-footer section#contact > div{
-    display: flex;
-    flex-flow: row wrap;
     gap: 20px;
-    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
+    font-family:monospace
 }
 
-#contact__email {
-    margin-top: 10px;
+p.end1{
+    font-size: medium;
+    color: gold;
+    
 }
 
-#uerj-icon {
-    width: 100px;
-    align-self: center;
-    margin-top: 30px;
+p.end11{
+    font-size: medium;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px; 
 }
 
-/* Direitos autorais */
-footer > p {
-    font-size: .8em;
-    border-top: 3px solid var(--font-color2);
-    padding-top: 30px;
-    border-radius: 3px;
+h1.end2{
+    font-size: medium;
+    color: gold;
+}
+
+p.end2{
+    font-size: medium;
+}
+
+h1.end3{
+    font-size: medium;
+    color: gold;
+}
+footer{
+    background-color: rgb(107, 24, 219);
+    width: 100%;
+    padding-bottom: 20px;
+    color: aliceblue;
+
+}
+
+img.logo{
+width: 90px;
+
+}
+p.email{
+    font-size: medium;
+}
+
+p.copy{
     text-align: center;
 }
 
-@media (min-width:700px) {
-    #footer__main{
-        flex-flow: row wrap;
-        align-items: flex-start;
-    }
+hr{
+    border-style: solid; border-width: medium; border-color: aliceblue;
+}
+
+iframe.maps{
+  border-radius: 25px;
+}
+
+address.cep{
+    font-style: italic;
+    font-size: medium;
 }

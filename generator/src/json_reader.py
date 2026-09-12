@@ -17,13 +17,17 @@ class Member(TypedDict):
 
 type Members = list[Member]
 
+class GuideItems(TypedDict):
+    text: str
+    vdo: str
+
 class Project(TypedDict):
     name: str
     creators: list[str]
     diff: Literal["easy","mid","hard"]
     diff_dev: Literal["easy","mid","hard"]
     desc: str
-    guide: list[tuple[Literal["p", "a", "img"], str]]
+    guide: GuideItems
 
 type Projects = list[Project]
 
@@ -45,8 +49,8 @@ def load_members_json() -> Members:
 
 def load_projects_json() -> Projects:
     projects_data: Projects = []
-    projects_json = listdir(PROJECTS_JSON_PATH)
-
+    projects_json = sorted(listdir(PROJECTS_JSON_PATH))
+    input(projects_json)
     for project_json in projects_json:
 
         project_json_path = path.join(PROJECTS_JSON_PATH, project_json)
@@ -60,6 +64,10 @@ def load_projects_json() -> Projects:
         else:
             project_data["img"] = ""
 
+        vdo_path = path.join(path.join(path.join(WEB_PATH,"videos"),"projects"),project_data['guide']["vdo"])
+        if path.exists(vdo_path):
+            project_data['guide']["vdo"] = f"../../videos/projects/{project_data['guide']["vdo"]}"
+        else:
+            project_data['guide']["vdo"] = ""
         projects_data.append(project_data)
-
     return projects_data

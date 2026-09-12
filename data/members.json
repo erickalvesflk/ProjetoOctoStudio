@@ -1,17 +1,5 @@
 [
     {
-        "name": "Edrey Caleb",
-        "tags": ["cc","oc1"],
-        "img": "caleb.jpeg",
-        "profile": "Aluno do 1° Semestre",
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/edreycaleb/",
-            "email": "edreycaleb5@gmail.com",
-            "instagram": "https://www.instagram.com/edreycaleb_/",
-            "github": ""
-        }
-    },
-    {
         "name": "Daniel ...",
         "tags": ["cc","oc1"],
         "img": "",
@@ -36,6 +24,18 @@
         }
     },
     {
+        "name": "Edrey Caleb",
+        "tags": ["cc","oc1"],
+        "img": "caleb.jpeg",
+        "profile": "Aluno do 1° Semestre",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/edreycaleb/",
+            "email": "edreycaleb5@gmail.com",
+            "instagram": "https://www.instagram.com/edreycaleb_/",
+            "github": "https://github.com/edreycaleb"
+        }
+    },
+    {
         "name": "Elle ...",
         "tags": ["cc"],
         "img": "",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Erick Alves",
-        "tags": ["cc","oc4","sc"],
+        "tags": ["cc","oc1","rl","sj"],
         "img": "erick.jpg",
         "profile": "Aluno do 1° Semestre",
         "social": {
@@ -85,12 +85,12 @@
     },
     {
         "name": "Paulo André",
-        "tags": ["cc","oc1","rl"],
+        "tags": ["cc","oc1","rl","sj"],
         "img": "paulo.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
-            "email": "",
+            "email": "soteropauloandre@gmail.com",
             "instagram": "https://www.instagram.com/pa.sotero/",
             "github": "https://github.com/passrs"
         }

@@ -12,21 +12,22 @@ body {
     justify-content: space-between;
     gap: 30px;
     background-color: var(--background);
+    color: rgb(0, 0, 0);
 }
 
 #project-header, #guide{
-    width: 70%;
+    width: 56%;
     margin: auto;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     border-right: 5px solid rgba(0, 0, 0, 0.200);
     border-bottom: 5px solid rgba(0, 0, 0, 0.200);
     background-color: var(--font-color2);
-    padding: 40px;
+    padding: 13px;
 }
 
 #guide{
@@ -36,19 +37,39 @@ body {
     width: 100%;
     justify-content: right;
 }
+#guide p {
+        text-align: justify;
+        align-self: flex-start;
+        font-family: monospace;
+        font-size: large;
+    }
 #guide div {
-    width: 100%;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20px                        
+}
+#guide video {
+    width: 70%; 
+    height: 90%; 
+    object-fit: contain; 
+    display: block; 
+    border-radius: 20px;
 }
 #guide img {
     width: 100%;
     margin: auto;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #guide div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: monospace;
 }
 
 #project-header img{
@@ -62,12 +83,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
 }
 
 #creators {
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 .creator {
     font-weight: 500;
@@ -88,35 +109,45 @@ body {
 
 
 #download-btn {
-    background-color: var(--third-color);
+    background-color:blueviolet;
     color: var(--font-color2);
     width: 95%;
     max-width: 500px;
     align-self: center;
+    transition: .25s transform;
 }
 
 #download-btn:hover {
-    background-color: var(--third-color-pressed);
+    background-color:rgb(125, 54, 192);
+    transform: scale(1.025);
 }
 
 @media (min-width:1450px){
 
     #project-header {
-        max-width: 1000px;
+        max-width: 825px;
         flex-flow: row wrap;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         align-items: flex-start;
     }
     #guide {
-        max-width: 1000px;
+        max-width: 825px;
     }
     #download-btn {
         align-self: center;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-right: 0px;
         width: calc(90% - 10px);
+        font-family: monospace;
+        font-size: larger;
     }
-    #guide p, #guide a {
+    #guide p {
+        text-align: justify;
         align-self: flex-start;
+        font-family: monospace;
+        font-size: large;
     }
 }
+
+
