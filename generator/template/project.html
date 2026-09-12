@@ -19,7 +19,7 @@
                     <img src="../../imgs/projects/project.jpg" width="300" alt="Imagem genérica de projeto sem foto">
                 {% endif %}
                 <div id="project-info">
-                    <div>
+                    <div id="project-title">
                         <h1 class="project">{{ project['name'] }}</h1>
                         <p id="creators">
                             {% if project['creators']|length == 1 %}
@@ -58,7 +58,7 @@
             {% if project['guide']|length > 0 %}
                 <section id="guide">
 
-                    <h1 class="guia">&#x1F56E; GUIA</h1>
+                    <h1 class="guia"><i class="fa-brands fa-readme"></i> GUIA</h1>
 
                     <p>{{ project['guide']['text'] }}</p>
                     <br>        
@@ -67,7 +67,6 @@
                             src="{{ project['guide']['vdo'] }}" autoplay loop muted playsinline>
                         </video>
                     </div>
-                    <br><br>
                 </section>
             {% endif %}
         </section>

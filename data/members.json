@@ -1,14 +1,14 @@
 [
     {
-        "name": "Daniel ...",
-        "tags": ["cc","oc1"],
+        "name": "Daniel Vaz",
+        "tags": ["cc","oc1","sj","rl"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
-            "email": "",
+            "email": "dv553484@gmail.com",
             "instagram": "",
-            "github": ""
+            "github": "https://github.com/dv553484-cloud"
         }
     },
     {
@@ -20,12 +20,12 @@
             "linkedin": "",
             "email": "",
             "instagram": "",
-            "github": ""
+            "github": "https://github.com/Fitas1902"
         }
     },
     {
         "name": "Edrey Caleb",
-        "tags": ["cc","oc1"],
+        "tags": ["cc","oc1","sj","rl"],
         "img": "caleb.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
@@ -73,14 +73,14 @@
     },
     {
         "name": "Matheus Evangelista",
-        "tags": ["cc","oc1"],
+        "tags": ["cc","oc1","rl"],
         "img": "",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
             "email": "",
             "instagram": "",
-            "github": ""
+            "github": "https://github.com/Zoup44"
         }
     },
     {
@@ -93,6 +93,18 @@
             "email": "soteropauloandre@gmail.com",
             "instagram": "https://www.instagram.com/pa.sotero/",
             "github": "https://github.com/passrs"
+        }
+    },
+    {
+        "name": "Pedro Castro",
+        "tags": ["td","do"],
+        "img": "",
+        "profile": "",
+        "social": {
+            "linkedin": "",
+            "email": "",
+            "instagram": "",
+            "github": ""
         }
     }
 ]

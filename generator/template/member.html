@@ -25,8 +25,14 @@
                         {% if tag == 'cc' %}
                             <p class="tag" id="cc">Ciência da Computação</p>
                         {% endif %}
+                        {% if tag == 'td' %}
+                            <p class="tag" id="td">Análise e Desenvolvimento de Sistemas</p>
+                        {% endif %}
                         {% if tag[0:2] == 'oc' %}
                             <p class="tag" id="octopus">Fez {{ tag[2] }} jogo{{"" if tag[2] == "1" else "s"}} - Octopus Studio</p>
+                        {% endif %}
+                        {% if tag == 'do' %}
+                            <p class="tag" id="do">Documentou projetos do OctoStudio</p>
                         {% endif %}
                         {% if tag[0:2] == 'rl' %}
                             <p class="tag" id="lego">Participou no projeto robô lego</p>
