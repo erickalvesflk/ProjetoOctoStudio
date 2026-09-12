@@ -4,7 +4,10 @@
     "img": "space.jpeg",
     "diff": "easy",
     "diff_dev": "easy",
-    "desc": "Desvie e Destrua os Asteróides! Quanto tempo você conseguirá?",
+    "desc": "Você consegue desviar? Destroi Asteroides é um jogo simples, cujo o objetivo é destruir o máximo de asteroides possíveis. Dê o seu melhor para continuar sobrevivendo na infinidade do espaço.",
     "file": "Destroi-Asteroides-1.1.octostudio",
-    "guide": []
+    "guide": {
+        "text": "O jogo 'Destrói Asteroides' é simples e muito divertido! O jogador controla uma nave com os movimentos do próprio dispositivo e a nave atira ao tocar na tela. O objetivo do jogo é conseguir a maior pontuação possível destruindo os asteroides, ao passo que o jogador desvia deles para se manter vivo no jogo. Divirta-se!", 
+        "vdo": "asteroides.mp4"
+    }
 }

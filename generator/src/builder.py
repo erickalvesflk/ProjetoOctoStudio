@@ -37,9 +37,9 @@ def projects_html() -> None:
 
     print("- - Iniciando construção das paginas")
     i = 0
+
     for PROJECT in PROJECTS:
         i += 1
-
         members_pages = {}
         for creator in PROJECT["creators"]:
             author_html_file_name = _remove_special_chars(creator.split(" ")[0].lower()) + ".html"

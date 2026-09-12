@@ -4,7 +4,10 @@
     "img": "pedra-papel-tesoura.jpg",
     "diff": "easy",
     "diff_dev": "mid",
-    "desc": "Jogue pedra, papel e tesoura agitando o seu dispositivos!",
+    "desc": "Que tal um clássico? Pedra, Papel e Tesoura, também conhecido como 'Jokenpô', é um simples jogo competitivo 1v1. Escolha corretamente sua opção e agite seu celular para jogar. Mostre suas habilidades e relembre o jogo que marcou a infância dos brasileiros.",
     "file": "Pedra-Papel-Tesoura-V1.1.octostudio",
-    "guide": []
+    "guide": {
+        "text": "O jogo 'Pedra, Papel ou Tesoura' é o clássico jogo infatil que todos já conhecem. O jogador agita o dispositivo para alternar entre as opções e toca na tela para escolher, e então agita mais algumas vezes para saber o resultado contra o bot. Um jogo simples e divertido!", 
+        "vdo": "pedrapapeltesoura.mp4"
+    }
 }

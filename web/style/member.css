@@ -33,19 +33,21 @@ main {
     
     border-bottom: 5px solid rgba(0, 0, 0, 0.205);
     border-right: 5px solid rgba(0, 0, 0, 0.205);
-    
     border-radius: 10px;
 }
+
 #participant-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #participant-info h1::before, #participant-info h1::after {
     content: " - ";
 }
-#participant-info img{
+
+#participant-info img {
     width: 200px;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -53,108 +55,160 @@ main {
     border: 5px solid var(--secundary2-color);
     outline: 5px solid var(--secundary2-color-pressed);
     margin-bottom: 20px;
-
 }
+
 #participant-networks {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 8px;
 }
 
-.net_btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    width: 70%;
-    height: 50px;
-    padding: 20px 50px;
+/* ========================================================
+   1. MODO MOBILE / BARRAS FINAS
+   ======================================================== */
 
-    background-color: rgb(197, 94, 94);
-    border-bottom: 5px solid rgba(0, 0, 0, 0.205);
-    border-right: 5px solid rgba(0, 0, 0, 0.205);
-    border-radius: 10px;
+.net_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 45px;
+    padding: 0 12px 0 7px;
+
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: var(--font-color1);
-
-    transition: background-color .05s ease-in-out
+    color: #25294a;
+    font-weight: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
 }
 
-.net-icon {
-    color: var(--font-color1);
-    font-size: 2em;
+.net_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.net_btn {
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.096);
+}
+/* Ícone quadrado no modo barra */
+.net_btn .net-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+
+    margin-right: 10px;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 1;
+    color: white;
 }
 
-#linkedin {
-    background-color: #1688f1;
-    color: var(--font-color2);
-}
-#linkedin svg{
-    color: var(--font-color2);
-}
-#linkedin:hover {
-    background-color: #0466c2;
-}
-
-#email {
-    background-color: #FC6D49;
-    color: var(--font-color2);
-}
-#email svg{
-    color: var(--font-color2);
-}
-#email:hover {
-    background-color: #d35131;
+/* Seta na ponta direita */
+.net_btn::after {
+    content: "\f08e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #25294a;
+    font-size: 16px;
+    margin-left: auto;
 }
 
-#instagram {
-    background-color: #de3ff3;
-    color: var(--font-color2);
-}
-#instagram svg{
-    color: var(--font-color2);
-}
-#instagram:hover {
-    background-color: #c238d4;
-}
+/* Cores das Barras no Mobile */
+#linkedin { border-left: 4px solid #1688f1; }
+#linkedin .net-icon { color: #1688f1; }
 
-#github {
-    background-color: #3D3D3D;
-    color: var(--font-color2);
-}
-#github svg{
-    color: var(--font-color2);
-}
-#github:hover {
-    background-color: #303030;
-}
+#github { border-left: 4px solid #3D3D3D; }
+#github .net-icon { color: #3D3D3D; }
 
-@media (min-width:700px){
-    #participant-container {
-        flex-direction: column;
-        margin: auto;
-        max-width: 80%;
-        max-width: 1000px;
-    }
+#email { border-left: 4px solid #FC6D49; }
+#email .net-icon { color: #FC6D49; }
+
+#instagram { border-left: 4px solid #de3ff3; }
+#instagram .net-icon { color: #de3ff3; }
+
+
+/* ========================================================
+   2. MODO DESKTOP / BOTÕES GRANDES (TELAS >= 700PX)
+   ======================================================== */
+
+
+@media (min-width: 700px) {
+    /* Define 4 colunas de tamanho idêntico usando CSS Grid */
     #participant-networks {
-        flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         justify-content: center;
-        gap: 20px;
-    }
-    .net_btn{
-        flex: 1;
-        height: 100px;
-        padding: 50px;
-    }
-    .net-icon {
-        color: var(--font-color1);
-        font-size: 500%;
+        gap: 15px;
+        width: 100%;
     }
 
+    /* Oculta a seta externa no desktop */
+    .net_btn::after {
+        display: none;
+    }
+
+    .net_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        
+        /* Define proporção e tamanho uniforme para todos os botões */
+        width: 100%;
+        height: 120px;
+        padding: 15px 10px;
+        box-sizing: border-box;
+
+        border: none;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.205);
+        border-right: 5px solid rgba(0, 0, 0, 0.205);
+        border-radius: 10px;
+
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--font-color2);
+    }
+
+    /* Garante que os ícones ocupem a mesma dimensão e fiquem padronizados */
+    .net_btn .net-icon {
+        width: 48px;
+        height: 48px;
+        min-width: unset;
+        margin-right: 0;
+        background-color: transparent !important;
+        font-size: 2.5rem;
+        line-height: 1;
+        color: var(--font-color2);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Cores dos botões no Desktop */
+    #linkedin { background-color: #1688f1; }
+    #linkedin:hover { background-color: #0466c2; }
+
+    #email { background-color: #FC6D49; }
+    #email:hover { background-color: #d35131; }
+
+    #instagram { background-color: #de3ff3; }
+    #instagram:hover { background-color: #c238d4; }
+
+    #github { background-color: #3D3D3D; }
+    #github:hover { background-color: #303030; }
 }
