@@ -12,5 +12,5 @@ PROJECTS_WEB_PATH = path.join(PAGES_PATH,"projects") # ProjetoOcto/web/pages/pro
 PROJECTS_IMGS_WEB_PATH = path.join(PROJECTS_WEB_PATH,"info") # ProjetoOcto/web/pages/projects/
 
 DATA_PATH = path.join(MAIN_PROJECT_PATH,"data") # ProjetoOcto/data
-PROJECTS_JSON_PATH = path.join(DATA_PATH,"projects") # ProjetoOcto/data/projects
+PROJECTS_JSON = path.join(DATA_PATH,"projects.json") # ProjetoOcto/data/projects.json
 MEMBER_JSON = path.join(DATA_PATH,"members.json") # ProjetoOcto/data/members.json

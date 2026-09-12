@@ -86,23 +86,20 @@ export async function generate_projects() {
     let projects_data = []
     let i = 1
     let projects_containers = []
-    while(i < 1000){
-        const response = await fetch(`data/projects/project${i > 9 ? `0${i}` : `00${i}`}.json`)
-        if (response.status == "404") {
-            console.log("opa")
-            break
-        }
-        const data_projects = await response.json();
-        projects_data.push(data_projects)
-        i += 1
-    }
-    
-    i = 1
-    projects_data.forEach(project => {
-        const num = i > 9 ? `0${i}` : `00${i}`
-        projects_containers.push(build_project(project,num))
-        i += 1
-    });
 
+    const response = await fetch(`data/projects.json`)
+    if (response.status == "404") {
+        console.log("Arquivo não encontrado!")
+    }else{
+        const data_projects = await response.json();
+        projects_data = data_projects
+
+        i = 1
+        projects_data.forEach(project => {
+            const num = i > 9 ? `0${i}` : `00${i}`
+            projects_containers.push(build_project(project,num))
+            i += 1
+        });
+    }
     return projects_containers
 }

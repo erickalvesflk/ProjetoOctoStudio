@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Jornada das Proteinas", 
+        "creators": ["Erick Alves"],
+        "img": "trad.png",
+        "diff": "mid",
+        "diff_dev": "hard",
+        "desc": "Você sabe do que é formado? Jornada das Proteínas é um jogo sobre a tradução de fitas RNA a partir do DNA. Ligue corretamente as bases para formar a proteína desejada e monte sua própria fita de RNA.",
+        "file": "transcricao_v0.31.octostudio",
+        "guide": {
+            "text": "O jogo 'jornada das Proteínas' é uma sensacional forma de aprender sobre as bases nitrogenadas. O jogo funciona como um 'Genius', em que você deve colocar a base que se liga com a que aparecer na tela. O jogo acaba quando você completar 10 rodadas. Divirta-se e aprenda!", 
+            "vdo": "jornadaproteinas.mp4"
+        }
+    },
+    {
+        "name": "Vector Drone",
+        "creators": ["Erick Alves"],
+        "img": "vector-drone.jpg",
+        "diff": "mid",
+        "diff_dev": "hard",
+        "desc": "Pronto para ser um herói? Vector Drone é um jogo de resgate, inspirado em jogos educativos. Configure corretamente os vetores para chegar ao seu alvo. Entretanto, tome cuidado, seu trabalho não tem espaço para erros.",
+        "file": "VectorDrone-V1.21.octostudio",
+        "guide": {
+            "text": "O jogo 'Vector Drone' explora de uma maneira divertida o estudo de soma vetorial. O objetivo do jogo é entregar os suprimentos médicos aos sobreviventes, e para isso, o jogador deve acertar a soma vetorial que o leva até a direção deles através dos movimentos do próprio dispositivo. Divirta-se e aprenda!", 
+            "vdo": "vectordrone.mp4"
+        }
+    },
+    {
+        "name": "Pedra Papel Tesoura",
+        "creators": ["Erick Alves"],
+        "img": "pedra-papel-tesoura.jpg",
+        "diff": "easy",
+        "diff_dev": "mid",
+        "desc": "Que tal um clássico? Pedra, Papel e Tesoura, também conhecido como 'Jokenpô', é um simples jogo competitivo 1v1. Escolha corretamente sua opção e agite seu celular para jogar. Mostre suas habilidades e relembre o jogo que marcou a infância dos brasileiros.",
+        "file": "Pedra-Papel-Tesoura-V1.1.octostudio",
+        "guide": {
+            "text": "O jogo 'Pedra, Papel ou Tesoura' é o clássico jogo infatil que todos já conhecem. O jogador agita o dispositivo para alternar entre as opções e toca na tela para escolher, e então agita mais algumas vezes para saber o resultado contra o bot. Um jogo simples e divertido!", 
+            "vdo": "pedrapapeltesoura.mp4"
+        }
+    },
+    {
+        "name": "Destroi Asteroides",
+        "creators": ["Paulo André"],
+        "img": "space.jpeg",
+        "diff": "easy",
+        "diff_dev": "easy",
+        "desc": "Você consegue desviar? Destroi Asteroides é um jogo simples, cujo o objetivo é destruir o máximo de asteroides possíveis. Dê o seu melhor para continuar sobrevivendo na infinidade do espaço.",
+        "file": "Destroi-Asteroides-1.1.octostudio",
+        "guide": {
+            "text": "O jogo 'Destrói Asteroides' é simples e muito divertido! O jogador controla uma nave com os movimentos do próprio dispositivo e a nave atira ao tocar na tela. O objetivo do jogo é conseguir a maior pontuação possível destruindo os asteroides, ao passo que o jogador desvia deles para se manter vivo no jogo. Divirta-se!", 
+            "vdo": "asteroides.mp4"
+        }
+    },
+    {
+        "name": "Ping Pong",
+        "creators": ["Erick Alves", "Paulo André"],
+        "img": "ping-pong.jpeg",
+        "diff": "easy",
+        "diff_dev": "easy",
+        "desc": "O primeiro jogo da história? Ping Pong é inspirado em Tennis for Two, o primeiro jogo digital da história. Incline seu celular para rebater a bola e veja como um simples game criou uma industria bilionaria que cresce a cada ano. ",
+        "file": "PingPong.octostudio",
+        "guide": {
+            "text": "O jogo 'Ping Pong' é muito desafiador! O objetivo do jogo é simples: não deixe a bola encostar nas extremidades laterais da tela! O jogador movimenta a 'raquete' do lado esquerdo com os movimentos do dispositivo enquanto o bot do jogo movimenta a outra. Divirta-se!", 
+            "vdo": "pingpong.mp4"
+        }
+    },
+    {
+        "name": "Star Rush",
+        "creators": ["Kauã Soares"],
+        "img": "star-rush.jpeg",
+        "diff": "easy",
+        "diff_dev": "mid",
+        "desc": "STAR RUSH é um jogo de corrida arcade em estilo 16-bits, inspirado nos clássicos jogos retrô.",
+        "file": "STAR RUSH  v3.8.octostudio",
+        "guide": {
+            "text": " Seu objetivo é simples: alcance 20 pontos para vencer, mas cuidado, encostar nas bordas da pista significa fim de jogo. Desvie, mantenha o controle e pegue as 20 estrelas!", 
+            "vdo": "starrush.mp4"
+        }
+    },
+    {
+        "name": "Code with Koby",
+        "creators": ["Kauã Soares"],
+        "img": "",
+        "diff": "easy",
+        "diff_dev": "hard",
+        "desc": "):",
+        "file": "PingPong.octostudio",
+        "guide": {
+            "text": "", 
+            "vdo": ""
+        }
+    },
+    {
+        "name": "OctoTanks", 
+        "creators": ["Erick Alves"],
+        "img": "octotanks.png",
+        "diff": "mid",
+        "diff_dev": "hard",
+        "desc": "OctoTanks é um duelo local entre dois tanques em uma arena cheia de obstáculos. Mire, ataque e sobreviva para derrotar seu adversário!",
+        "file": "transcricao_v0.31.octostudio",
+        "guide": {
+            "text": "Utilize o seu tanque para eliminar o seu adversário! Mexa o celular para rotacionar o tanque e use os controles para atirar e deslocar! São necessários 3 dispositivos: um exibe a arena e os outros dois controlam cada jogador.", 
+            "vdo": ""
+        }
+    }
+]

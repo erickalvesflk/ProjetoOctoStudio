@@ -77,25 +77,6 @@
         width: 50%;
     }
     
-
-    
-    /* GAMES SECTION */
-    #games-carousel-container{
-        width: 100%; 
-        min-height: 350px;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-    #games-carousel{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        height: 100%;
-        gap: 20px;
-        transition: transform 0.4s ease;
-    }
     .game-container{
         flex: 0 0 calc((100% - 20px) / 2);
         flex-direction: column;
@@ -129,38 +110,6 @@
     .game-info a{
         font-size: 1.25em;
     }
-    #games-carousel-arrows{
-        display: flex;
-        position: absolute;
-        justify-content: space-between;
-        z-index: 1;
-        width: 100%;
-        height: 20%;
-        min-height: 320px;
-        margin: auto;
-        pointer-events: none;
-        
-    }
-    #games-carousel-arrows > div{
-        pointer-events: visible;
-        background-color: rgba(12, 12, 12, 0.00);
-        align-items: center;
-        height: 100%;
-        display: flex;
-        transition: .25s transform, .25s background-color;
-    }
-    #games-carousel-arrows > div > div{
-        font-size: 2.5em;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: var(--font-color2);
-        margin: 0px 15px 0px 15px;
-    }
-    #games-carousel-arrows > div:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        background-color: rgba(48, 48, 48, 0.100);
-    }
 }
 @media (min-width: 1400px) {
     #about-container img {
@@ -177,4 +126,44 @@
         grid-template-columns: repeat(5,1fr);
     }
 
+}
+
+@media (min-width: 760px) {
+
+    #games-carousel-container {
+        position: relative;
+
+        width: 100%;
+        min-height: 380px;
+
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    #games-carousel {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        gap: 15px;
+
+        width: max-content;
+    }
+
+    .game-container {
+        flex: 0 0 350px;
+
+        filter: brightness(80%);
+
+        transition:
+            transform .25s,
+            filter .25s;
+    }
+
+    .focus-game-container {
+        transform: scale(1.08);
+        filter: brightness(100%);
+    }
 }
