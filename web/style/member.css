@@ -128,17 +128,16 @@ main {
 
 /* Cores das Barras no Mobile */
 #linkedin { border-left: 4px solid #1688f1; }
-#linkedin .net-icon { color: #1688f1; }
-
 #github { border-left: 4px solid #3D3D3D; }
-#github .net-icon { color: #3D3D3D; }
-
 #email { border-left: 4px solid #FC6D49; }
-#email .net-icon { color: #FC6D49; }
-
 #instagram { border-left: 4px solid #de3ff3; }
-#instagram .net-icon { color: #de3ff3; }
 
+@media (max-width: 700px) {
+    #linkedin .net-icon { color: #1688f1; }
+    #github .net-icon { color: #3D3D3D; }
+    #email .net-icon { color: #FC6D49; }
+    #instagram .net-icon { color: #de3ff3; }
+}
 
 /* ========================================================
    2. MODO DESKTOP / BOTÕES GRANDES (TELAS >= 700PX)
