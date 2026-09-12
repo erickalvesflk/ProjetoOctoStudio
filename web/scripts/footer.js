@@ -16,7 +16,7 @@ function generateFooter(){
     `<section id="footer_title">
         <h1 class="end1">${alien_svg} Projeto Octostudio</h1><br>
         <p class="end1">&nbsp;PATROCINADO POR:</p><br>
-        <p class="end11">Patrocinada pela UERJ-ZO e orquestrado NucT</p><br>
+        <p class="end11">Patrocinada pela UERJ-ZO e orquestrado NucTi</p><br>
     </section>`
     )
 

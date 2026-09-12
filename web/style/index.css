@@ -136,11 +136,6 @@
 
 
 /* GAMES SECTIONS */
-#games-carousel {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 .game-container {
     background-color: var(--font-color2);
     border-radius: 10px;
@@ -182,9 +177,16 @@
     content: " ->";
 }
 
-#games-carousel-arrows{
-    display: none;
-}
-#games-carousel-container{
+#games-carousel-container {
     overflow: hidden;
+}
+
+#games-carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+#games-carousel-arrows {
+    display: none;
 }
