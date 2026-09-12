@@ -16,7 +16,7 @@ function generateFooter(){
     `<section id="footer_title">
         <h1 class="end1">${alien_svg} Projeto Octostudio</h1><br>
         <p class="end1">&nbsp;PATROCINADO POR:</p><br>
-        <p class="end11"> <strong>UERJ-ZO</strong><br>departamento NucTI</p><br>
+        <p class="end11">Patrocinada pela UERJ-ZO e orquestrado NucT</p><br>
     </section>`
     )
 
@@ -24,7 +24,7 @@ function generateFooter(){
     `<main id="footer__main">
         <section>
             <h1 class="end2">&nbsp;UERJ-ZO</h1>
-            <p class="end2">&nbsp;Excelência no ensino público, pesquisa e extensão. <br>&nbsp;Transformando a Zona Oeste do Rio através da ciência e tecnologia.</p><br>
+            <p class="end2">&nbsp;Excelência no ensino público, pesquisa e extensão. Transformando a Zona Oeste do Rio através da ciência e tecnologia.</p><br>
         </section>
         <section id="contact">
             <h1 class="end3">&nbsp;ONDE ESTAMOS</h1><br>

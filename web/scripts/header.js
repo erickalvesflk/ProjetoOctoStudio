@@ -34,7 +34,7 @@ function generateHeader(){
     </button>
     <ul id="nav__options">
           <li class="nav__option"><a href="${home_path}#about-container">Inicio</a></li>
-          <li class="nav__option"><a href="#">Formulário</a></li>
+          <li class="nav__option"><a href="https://docs.google.com/forms/d/e/1FAIpQLSde79rnyc9SnP2ya47z7bzudZkwRgYZ8uAuV1IWm8xmR41_AQ/viewform">Formulário</a></li>
           <li class="nav__option"><a href="${home_path}#members-container">Participantes</a></li>
           <li class="nav__option"><a href="${home_path}#games-section">Jogos</a></li>
     </ul>`

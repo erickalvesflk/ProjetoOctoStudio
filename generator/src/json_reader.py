@@ -50,7 +50,6 @@ def load_members_json() -> Members:
 def load_projects_json() -> Projects:
     projects_data: Projects = []
     projects_json = sorted(listdir(PROJECTS_JSON_PATH))
-    input(projects_json)
     for project_json in projects_json:
 
         project_json_path = path.join(PROJECTS_JSON_PATH, project_json)

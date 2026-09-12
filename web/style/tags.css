@@ -22,7 +22,9 @@
 }
 
 #cc {background-color: #139b47;}
+#td {background-color: #139b84;}
 #octopus {background-color: var(--main-color);}
+#do {background-color: var(--main-color);}
 #lego {background-color: #ff912a;}
 #koby {background-color: #3a2cfc;}
 #sitej {background-color: var(--secundary-color);}
