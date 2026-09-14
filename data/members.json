@@ -2,7 +2,7 @@
     {
         "name": "Daniel Vaz",
         "tags": ["cc","oc1","sj","rl"],
-        "img": "",
+        "img": "DV.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
@@ -14,7 +14,7 @@
     {
         "name": "Danilo Gomes",
         "tags": ["cc","oc1","rl","sj"],
-        "img": "",
+        "img": "DG.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
             "linkedin": "",
@@ -38,8 +38,8 @@
     {
         "name": "Elle ...",
         "tags": ["cc"],
-        "img": "",
-        "profile": "Aluno do x° Semestre",
+        "img": "E.jpeg.jpeg",
+        "profile": "...",
         "social": {
             "linkedin": "",
             "email": "",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Erick Alves",
-        "tags": ["cc","oc1","rl","sj"],
+        "tags": ["cc","oc5","rl","sj"],
         "img": "erick.jpg",
         "profile": "Aluno do 1° Semestre",
         "social": {
@@ -73,13 +73,13 @@
     },
     {
         "name": "Matheus Evangelista",
-        "tags": ["cc","oc1","rl"],
-        "img": "",
+        "tags": ["cc","oc1","rl","sj"],
+        "img": "sidfoto.jpeg",
         "profile": "Aluno do 1° Semestre",
         "social": {
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/matheus-evangelista-de-souza-a7a12230a/",
             "email": "",
-            "instagram": "",
+            "instagram": "https://www.instagram.com/evangelista_zoup/",
             "github": "https://github.com/Zoup44"
         }
     },
@@ -98,7 +98,7 @@
     {
         "name": "Pedro Castro",
         "tags": ["td","do"],
-        "img": "",
+        "img": "PC.jpeg",
         "profile": "",
         "social": {
             "linkedin": "",
