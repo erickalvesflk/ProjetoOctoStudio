@@ -40,11 +40,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#participant-info h1::before, #participant-info h1::after {
-    content: " - ";
-}
+    text-align: center;}
 
 #participant-info img {
     width: 200px;
@@ -113,16 +109,6 @@ main {
     font-size: 16px;
     line-height: 1;
     color: white;
-}
-
-/* Seta na ponta direita */
-.net_btn::after {
-    content: "\f08e";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #25294a;
-    font-size: 16px;
-    margin-left: auto;
 }
 
 /* Cores das Barras no Mobile */
